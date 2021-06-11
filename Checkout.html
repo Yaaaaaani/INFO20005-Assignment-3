@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/categoryPage.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+</head>
+<body>
+    <!--Header part-->
+    <header>
+        <!--Functions over the white line-->
+        <div class = "Container upLine" id = "upLine">
+            <img class = "logo" src = "../images/logo.png" alt = "logo"></img>
+            <div class = "Container page">
+                <div class = "btn-header"><a href = "index.html">Home</a></div>
+                <div class = "btn-header" id = "clickBtn"><span id = "textInBtn">Living</span></div>
+                <div class = "btn-header"><span>Dining</span></div>
+                <div class = "btn-header"><span>Bedroom</span></div>
+                <div class = "btn-header"><span>Outdoor</span></div>
+                <div class = "btn-header"><span>Homewares</span></div>
+            </div>
+            <div class = "Container icon">
+                <div class = "btn-header" id = "searchIcon" ><img src = "../images/searchIcon.png"></img></div>
+                <div class = "btn-header" id = "userIcon" ><img src = "../images/userIcon.png"></img></div>
+                <div class = "btn-header" id = "wishListIcon" onclick = "window.location.href = 'Wishlist.html'">
+                    <img src = "../images/wishlistIcon.png"></img></div>
+                <div class = "btn-header" id = "cartIcon" onclick = "window.location.href = 'Cart.html'">
+                    <img src = "../images/cartIcon.png"></img></div>
+            </div>
+        </div>
+        <!--Search Function-->
+        <div class = "searchBar" id = "searchBar">
+            <div class = "Container innerBar">
+                <img id = "closeSearch" src = "../images/closeSearch.png"></img>
+                <div><p>Velvet Sofa</p></div>
+                <a href = "#"><img src = "../images/greenSearch.png"></img></a>
+            </div>
+        </div>
+        <!--Functions under the white line-->
+        <div class = "Container downLine">
+            <div></div>
+            <div class = "Container setting">
+                <div class = "btn-setting" onclick = ""><span>Version - Web</span></div>
+                <div class = "btn-setting" onclick = ""><span>Language - English</span></div>
+                <div class = "btn-setting" onclick = ""><span>Currency - AU$</span></div>
+            </div>
+        </div>
+        <!--Small Living Category in Header-->
+        <div class = "livingCate" id = "categoryName">
+            <div class = "Container living">
+                <div class = "flexColumn">
+                    <div class = "btn"><a href = "FabricSofas.html">Fabric Sofas</a></div>
+                    <div class = "btn"><span>Coffee Tables</span></div>
+                    <div class = "btn"><span>Ottomans</span></div>
+                </div>
+                <div class = "flexColumn">
+                    <div class = "btn"><span>Leather Sofas</span></div>
+                    <div class = "btn"><span>Side Tables</span></div>
+                    <div class = "btn"><span>Office</span></div>
+                </div>
+                <div class = "flexColumn">
+                    <div class = "btn"><span>Occasional Sofas</span></div>
+                    <div class = "btn"><span>Entertainment Tables</span></div>
+                    <div class = "btn"><span>Fabric & Leather Warranty</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Login Function-->
+        <div class = "loginSection flexColumn" id = "loginSection">
+            <div class = "upLogin">
+                <h6>Hi,</h6>
+                <h6>Miss Shirley Friday!</h6>
+                <div class = "btn-login" onclick = "window.location.href = 'MyAccount.html'">
+                    <h6 style="margin-left: 20px;" class = "itemInfo title">My Account</h6>
+                    <img style="margin-left: 20px;" src = "./images/arrow.png"></img></div>
+                <div class = "btn-login" onclick = "window.location.href = 'Order.html'">
+                    <h6 style="margin-left: 20px;" class = "itemInfo title">View My Order</h6>
+                    <img style="margin-left: 20px;" src = "./images/arrow.png"></img></div>          
+            </div>
+            <button class = "btn-confirm green" id = "closeLogin">Continue Shopping</button>
+        </div>
+    </header>
+
+    <!--Sidemenu-->
+    <div class = "sidemenu" id = "sidemenu" style="display: none;">
+        <div id = "normalDisplay">
+            <div class = "headerPart" id = "sidemenuClose">
+                <img src = "./images/leftArraw.png" style="margin-right: 15px;">
+                <span>BACK</span>
+            </div>
+    
+            <div class = "midPart">
+                <span onclick = "window.location.href = 'MyAccount.html'">SHIRLEY</span>
+                <img src = "./images/userIconBlack.png" style = "width: 25px; height: 25px;">
+            </div>
+    
+            <div class = "midPart">
+                <span onclick = "window.location.href = 'Wishlist.html'">WISHLIST</span>
+                <img src = "./images/favoriteIconBlack.png" style = "width: 25px; height: 25px;">
+            </div>
+    
+            <div class = "entrancesPart">
+                <p onclick = "window.location.href = 'index.html'">Home</p>
+                <p id = "livingBtn">Living</p>
+                <p>Dining</p>
+                <p>Bedroom</p>
+                <p>Outdoor</p>
+                <p>Homewares</p>
+            </div>
+    
+            <div class = "footerPart">
+                <p>Support</p>
+                <p>Store Location</p>
+            </div>
+        </div>
+        
+        <div id = "livingDisplay" style = "display: none;">
+            <div class = "headerPart" id = "livingDisplayClose">
+                <img src = "./images/leftArraw.png" style="margin-right: 15px;">
+                <span>BACK</span>
+            </div>
+            <div class = "entrancesPart">
+                <p onclick = "window.location.href = 'FabricSofas.html'">Fabric Sofas</p>
+                <p>Leather Sofas</p>
+                <p style = "width:120px;">Occasional Chairs</p>
+                <p>Coffee Tables</p>
+                <p>Side Tables</p>
+                <p style = "width:120px;">Entertainment Units</p>
+                <p>Ottomans</p>
+                <p>Office</p>
+                <p style = "width:120px;">Fabric & Leather 
+                    Protection Warranties</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Mobile Header-->
+    <div class = "mobile mobileHeader">
+        <div class = "upperBar">
+            <img class = "btn-mobileIcon" src = "./images/hamburgerBar.png" id = "humbargerBar">
+            <img class = "logo" src = "./images/logo.png">
+            <img class = "btn-mobileIcon" src = "./images/cartIcon.png" 
+                onclick="window.location.href='Cart.html'">
+        </div>
+        <div class = "lowerBar">
+            <div class = "naviBar mobileNavi">
+                <a onclick = "javascript: history.back(-1)">Back to Shopping</a>
+            </div>
+            <img class = "searchIcon" id = "mobileSearchIcon" src = "./images/searchIcon.png"></img>
+        </div>
+        <!--Mobile Search Function-->
+        <div class = "mobileSearchBar" id = "mobileSearchBar">
+            <input type = "text" class = "inputSearch"/>
+            <img id = "mobileCloseSearch" src = "./images/closeSearch.png" class = "searchIcon"
+                style = "position: absolute; z-index: 101; left: 10px">
+            
+            <img src = "./images/greenSearch.png" class = "searchIcon"
+                style = "position: absolute; z-index: 101; right: 10px;">
+        </div>
+    </div>
+
+    <!--Main-->
+    <div class= "checkoutMain">
+        <div class = "titleLine mobileTitle" style="margin: 0px 15px; padding-bottom: 20px;">
+            <h2>Checkout</h2>
+            <button class = "btn-confirm green mobileInvisible" onclick = "javascript: history.back(-1)">Continue Shopping</button>
+        </div>
+        <div class = "Container checkoutForm mobileCheckoutForm">
+            <div class = "flexColumn addressForm">
+                <h5 class = "titleForm">1. Shipping Address</h5>
+                <div class = "flexColumn innerForm">
+                    <label>Email Address</label>
+                    <input id = "email" type = "text" class = "formInput"/>
+                    <h6 class = "reminder">The order will be sent to this address.</h6>
+                    <div class = "group form">
+                        <div class = "flexColumn">
+                            <label>First Name</label>
+                            <input id = "fName" type = "text" class = "formInput smallerForm"/>
+                        </div>
+                        <div class = "flexColumn">
+                            <label>Last Name</label>
+                            <input id = "lName" type = "text" class = "formInput smallerForm"/>
+                        </div>
+                    </div>
+                    <label>Street</label>
+                    <input id = "street" type = "text" class = "formInput"/>
+                    <div class = "group form">
+                        <div class = "flexColumn">
+                            <label>City</label>
+                            <input id = "city" type = "text" class = "formInput smallerForm"/>
+                        </div>
+                        <div class = "flexColumn">
+                            <label>State</label>
+                            <input id = "state" type = "text" class = "formInput smallerForm"/>
+                        </div>
+                    </div>
+                    <div class = "group form">
+                        <div class = "flexColumn">
+                            <label>Postcode</label>
+                            <input id = "postcode" type = "text" class = "formInput smallerForm"/>
+                        </div>
+                        <div class = "flexColumn">
+                            <label>Country</label>
+                            <input id = "country" type = "text" class = "formInput smallerForm"/>
+                        </div>
+                    </div>
+                    <label>Phone Number</label>
+                    <input id = "phoneNum" type = "text" class = "formInput"/>
+                    <button class = "btn-confirm longerBtn brown" id = "automaticalFilling">Fill with commonly used address</button>
+                </div>
+            </div>
+
+            <div class = "flexColumn special_justify">
+                <div class = "shippingMethod">
+                    <h5 class = "titleForm">2. Shipping Method</h5>
+                    <div class = "flexColumn innerForm">
+                        <div class = "group form">
+                            <input type = "checkbox" value = "1" id = "normalShipping" class = "formCheckbox" />
+                            <label class="choice">Normal Shipping | 7 - 10 Days</label>
+                        </div>
+                        <div class = "group form special_justify">
+                            <input type = "checkbox" value = "1" id = "expressShipping" class = "formCheckbox" />
+                            <label class="choice">Express Shipping | 3 - 5 Days</label>
+                        </div>
+                    </div>
+                </div>
+                <div class = "paymentMethod">
+                    <h5 class = "titleForm">3. Payment Method</h5>
+                    <div class = "flexColumn innerForm">
+                        <div class = "group form special_justify">
+                            <input type = "checkbox" value = "1" id = "normalShipping" class = "formCheckbox" />
+                            <label class="choice">Credit Card - eWay</label>
+                        </div>
+                    
+                        <div class = "group form special_justify">
+                            <input type = "checkbox" value = "1" id = "expressShipping" class = "formCheckbox" />
+                            <label class="choice">Zip - Own it now, pay later</label>
+                        </div>
+                        <label class = "discountCode">Enter Discount Code:</label>
+                        <input type = "text" class = "formInput"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "flexColumn orderSummary">
+                <h5 class = "titleForm">Order Summary</h5>
+                <div class = "flexColumn innerForm">
+                    <h6>1 Item in Cart</h6>
+                    <div class = "checkoutList">
+                        <div class = "item1 checkoutItem">
+                            <img class = "smallProductPht" src = "./images/Sofas/sofa1.png"></img>
+                            <h5>Paolo 3-Seater Electric Recliner</h5>
+                            <h6 class = "itemInfo">Color: White</h6>
+                            <h6 class = "itemInfo">QTY: 1</h6>
+                            <h6 class = "itemInfo">Price: $1999.00</h6>
+                            <h6 class = "itemInfo redText">Subtotal: $1999.00</h6>
+                        </div>
+                    </div>
+                    <h6 class = "priceCalculation">Cart Total: $1999,00</h6>
+                    <h6 class = "priceCalculation">Shipping: Not yet calculated</h6>
+                    <h6 class = "priceCalculation redText">Order Total: $1999,00</h6>
+                </div>
+            </div>
+
+            <div class = "flexColumn orderComment">
+                <h5 class = "titleForm">Order Comment</h5>
+                <textarea class = "command innerForm mobileTextarea"></textarea>
+                <button class = "btn-confirm placeOrder brown" onclick="window.location.href = 'SucessfullyPurchase.html'">
+                    Place Order</button>
+            </div>
+        </div>
+
+
+    </main>    
+
+    <!--Footer part-->
+    <footer>
+        <div class = "leftSide">
+
+            <div class = "upSide">
+                <a class = "info" href = "#">Store Location</a>
+                <a class = "info" href = "#">Support</a>
+            </div>
+            <div class = "downSide">
+                <p>Email Address: cs@koalaliving.com</p>
+                <p>Contact Number: 1800 098 202</p>
+            </div>
+        </div>
+
+        <div class = "rightSide">
+            <div class = "upSide">
+                <p>Follow Us @Koala_living</p>
+            </div>
+            <div class = "downSide">
+                <p>Copyright 2019 Koala Living</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./js/sidemenu.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/smallCategory.js"></script>
+    <script src="./js/loginFunction.js"></script>
+    <script src="./js/automaticallyFill.js"></script>
+    
+</body>
+</html>
