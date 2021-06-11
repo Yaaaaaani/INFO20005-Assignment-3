@@ -1,0 +1,780 @@
+h1{
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.categoryPage > p{
+    margin: 0;
+    font-family: "Adobe Clean", sans-serif;
+    letter-spacing: 1px;
+}
+
+.categoryPage > p > span {
+    color: #805F53;
+    letter-spacing: 1px;
+    margin-left: 5px;
+}
+
+.background{
+    width: 100%;
+    background-color: #B3BDB7;
+    margin-top: 2%;
+    min-width: 1153px;
+}
+
+.livingPage{
+    margin: 2%;
+}
+
+.filterSection{
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: "Adobe Clean", sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1%;
+    border-bottom: 3px solid white;
+}
+
+.filter{
+    display: block;
+}
+
+h3{
+    float: left;
+}
+
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-filter > img{
+    width: 40px;
+    height: 40px;
+}
+
+.icon-filter{
+    cursor: pointer;
+    margin-left: 2%;
+    width: 40px;
+    height: 40px;
+    padding: 0.5em;
+    background-color: white;
+}
+
+.btn-filter{
+    cursor: pointer;
+    margin-left: 2%;
+    padding: 5px 30px;
+    align-self: center;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 0.7em;
+}
+
+.choosed{
+    color: white;
+    background-color: #805F53;
+}
+
+.fabricSofas{
+    margin: 2%;
+}
+
+.livingCol > .imgBox{
+    text-align: center;
+    background-color: white;
+    margin-bottom: 7%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 3px;
+    height: 280px;
+}
+
+.livingCol > .imgBox > img{
+    width: 370px;
+    height: 230px;
+}
+
+.livingCol > .imgBox > div{
+    margin-top: 2%;
+}
+
+.fabricCol > .imgBox{
+    font-family: "Adobe Clean", sans-serif;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 7%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 3px;
+    width: 370px;
+    height: 310px;
+    position: relative;
+}
+
+
+
+.fabricCol > .imgBox > a > .product{
+    width: 370px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fabricCol > .imgBox > .favorite{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+
+.fabricCol > .imgBox > .details{
+    width: 370px;
+    position: absolute;
+    top: 190px;
+}
+
+.details > p{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.details > .price{
+    color: #781715;
+    letter-spacing: 0;
+}
+
+.details > button{
+    font-family: "Adobe Clean", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 1px 70px;
+    border-radius: 10px;
+    border-color: #805F53;
+    border-style: solid;
+    background-color: #805F53;
+    color: white;
+    cursor: pointer;
+}
+
+/*Confirm Frame*/
+
+.confirm{
+    display: none;
+
+    width: 1000px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+
+    flex-direction: column;
+    margin: 2.5% auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 101;
+}
+
+.confirm > h4, h4 > span{
+    font-family: "Adobe Clean", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h4 > span{
+    color: #781715;
+}
+
+.btns-confirm{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.btn-confirm{
+    font-family: "Adobe Clean", sans-serif;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+    width: 200px;
+    height: 30px;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.brown{
+    background-color: #805F53;
+}
+
+.green{
+    background-color: #446155;
+}
+
+.lightBrown{
+    background-color: #BB907A;
+}
+
+/*login Function*/
+.loginSection{
+    display: none;
+    background-color: white;
+    width: 15%;
+    height: 200%;
+    padding: 1% 1%;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+    right: 28px;
+    z-index: 101;
+    text-align: center;
+}
+
+.btn-login{
+    background-color: #B3BDB7;
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+/*Wish List*/
+.titleLine{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1%;
+    border-bottom: 2px solid #446155;
+}
+
+.leftTitle{
+    display: flex;
+}
+
+.orderTotal{
+    color: #781715;
+}
+
+h2{
+    font-size: 2em;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.leftTitle > p{
+    font-size: 1em;
+    font-family: "Adobe Clean", sans-serif;
+    margin: auto 0;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.itemList{
+    margin-top: 20px;
+}
+
+.item1{
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border: 10px solid #B3BDB7;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.cart{
+    height: 491px;
+}
+
+
+.redText{
+    color: #781715;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+h5{
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 51px;
+}
+
+.qty{
+    margin: 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.itemList p, .checkoutList p, .innerCircle p{
+    font-family: "Adobe Clean", sans-serif;
+    letter-spacing: 2px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+.smallProductPht{
+    width: 280px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.color{
+    width: 51px;
+    height: 51px;
+}
+
+.minus{
+    width: 35px;
+    height: 10px;
+}
+
+.plus{
+    width: 35px;
+    height: 35px;
+}
+
+.btn-item{
+    margin-top: 15px;
+}
+
+.itemCheckbox{
+    align-items: center;
+}
+
+.chooseItem{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/*Checkout Page*/
+
+.checkoutMain{
+    display: flex;
+    flex-direction: column;
+    margin-top: 175px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.checkoutForm{
+    flex-wrap: wrap;
+}
+
+.addressForm, .shippingMethod, .orderSummary, .orderComment{
+    margin-top: 15px;
+    height: fit-content;
+}
+
+.paymentMethod{
+    margin-top: 30px;
+    height: fit-content;
+}
+
+.form{
+    margin: 0;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.shippingMethod .form, .paymentMethod .form{
+    margin-bottom: 10px;
+}
+
+.special_justify{
+    justify-content: flex-start;
+}
+
+.titleForm{
+    background-color: #B3BDB7;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.innerForm{
+    border: 2px solid #B3BDB7;
+    padding: 10px 10px;
+
+}
+
+h6, label{
+    font-size: 1.2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.reminder{
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #446155;
+}
+
+.formInput{
+    width: 320px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 1.1em;
+    font-family: "Adobe Clean", sans-serif;
+}
+
+.smallerForm{
+    width: 150px;
+}
+
+.formCheckbox{
+    width: 25px;
+    height: 25px;
+}
+
+.choice{
+    margin-left: 5px;
+}
+
+.longerBtn{
+    margin-top: 20px;
+    width: 300px;
+}
+
+.discountCode{
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #446155;
+}
+
+.checkoutItem{
+    margin-top: 2px;
+    height: 385px;
+}
+
+.itemInfo{
+    font-family: "Adobe Clean", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.checkoutList{
+    margin-bottom: 15px;
+}
+
+.priceCalculation{
+    margin: 10px 0px;
+}
+
+.command{
+    height: 300px;
+    width: 200px;
+    border: 5px solid #B3BDB7;
+    font-size: 1.2em;
+    font-family: "Adobe Clean", sans-serif;
+}
+
+.placeOrder{
+    margin-top: 10%;
+    font-size: 1.5em;
+    font-weight: 400;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+}
+
+/*Successfully Purchase Page*/
+
+.finishPurchase{
+    background-color: #B3BDB7;
+}
+
+.finishPurchase > main{
+    margin-top: 160px;
+}
+
+.finishPurchase > footer{
+    margin-top: 25px;
+}
+
+.innerCircle{
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    padding: 100px 100px;
+    border-radius: 1500px;
+}
+
+.innerCircle > button{
+    margin: 15px;
+}
+
+/*Order Page*/
+
+.orderInfo{
+    align-items: center;
+    justify-content: left;
+    background-color: #B3BDB7;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.whiteBackground{
+    background-color: white;
+    height: 170px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 0px 15px;
+}
+
+.whiteBackground h6{
+    margin-left: 20px;
+}
+
+.whiteBackground > .itemInfo{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.orderPage{
+    border-radius: 10px;
+}
+
+.itemDetails{
+    margin-top: 15px;
+}
+
+.title{
+    font-weight: 400;
+}
+
+.paymentColumn{
+    width: 340px;
+    height: 120px;
+}
+
+.currentStatus{
+    width: 340px;
+    height: 40px;
+}
+
+/*Detailed Product Page*/
+
+.productIntro .group{
+    margin:0;
+}
+
+.productIntro p{
+    font-size: 1.4em;
+}
+
+.btn-productIntro{
+    margin-right: 50px;
+}
+
+.priceDisplay{
+    font-family: "Adobe Clean", sans-serif;
+    color: #781715;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+.imgGroup{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgGroup > img{
+    width: 105px;
+    height: 85px;
+    cursor: pointer;
+}
+
+.btn-circle{
+    width: max-content;
+    padding: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+
+    position: fixed;
+    right: 0;
+}
+
+.alignTop{
+    width: 35px;
+    height: 35px;
+}
+
+.pageTop{
+    position: absolute;
+    top: 0;
+}
+
+.downDetails{
+    background-color: #B3BDB7;
+    margin-top: 50px;
+}
+
+.description, .productDetails, .warranty{
+    background-color: white;
+    margin: 15px 30px;
+}
+
+.description > .Container{
+    align-items: center;
+    margin: 20px 15px;
+}
+
+.paragraph{
+    width: 900px;
+}
+
+.paragraph h5{
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.paragraph p, .productDetails p, .warranty{
+    font-family: "Adobe Clean", sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 170%;
+}
+
+.leftDetails{
+    margin-left: 15px;
+    margin-right: 200px;
+}
+
+.rightDetails{
+    margin-left: 100px;
+}
+
+.middleLine{
+    align-self: center;
+    border-left: 2px solid #000000;
+    height: 320px;
+}
+
+.warranty{
+    padding: 10px 15px;
+}
+
+.acceleratorGroup{
+    margin: 15px 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid white;
+}
+
+.btn-accelerator{
+    width: 15%;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.btn-accelerator a{
+    text-decoration: none;
+    font-family: "Adobe Clean", sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.btn-confirm:hover, .favorite:hover, .imgBox button:hover, .formCheckbox:hover, .chooseItem:hover{
+    box-shadow: 0px 0px 10px 2px #AFAFAF;
+}
+
+.imgBox:hover{
+    box-shadow: 0px 0px 10px 2px grey;
+}
+
+/*My Account Page*/
+
+.myAccount .commonAddress, .myAccount .personalInfo{
+    width: 48%;
+    min-width: 540px;
+    margin-top: 1%;
+}
+
+.myAccount .group{
+    justify-content: flex-start;
+}
+
+.myAccount .innerForm .flexColumn{
+    margin-right: 25px;
+}
+
+.personalInfo .smallerForm{
+    width: 180px;
+}
+
+.commonAddress .smallerForm{
+    width: 290px;
+}
+
+.myAccount .innerForm .btn-confirm{
+    margin-top: 50px;
+    margin-right: 25px;
+    align-self: flex-end;
+}

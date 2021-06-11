@@ -1,0 +1,612 @@
+/*Change to mobile version*/
+@media screen and (min-width: 769px) {
+    .mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile{
+        display: block;
+        color:white;
+        font-family: "Adobe Clean", sans-serif;
+        font-size: 16px;
+    }
+
+    .logo{
+        width: 100px;
+        height: 50px;
+    }
+
+    header{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
+    main{
+        display: none;
+    }
+
+    .mobileInvisible{
+        display: none;
+    }
+
+    .checkoutMain{
+        margin-top: 150px;
+    }
+
+    .mobileCheckoutForm{
+        margin: 0px auto;
+        flex-direction: column;
+    }
+
+    .mobileTitle h2{
+        font-size: 1.5rem;
+        font-family: "Bodoni 72", serif;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .mobileTextarea{
+        width: inherit;
+    }
+
+    .placeOrder{
+        height: 50px;
+        margin-bottom: 40px;
+    }
+
+    .shippingMethod, .orderSummary, .orderComment{
+        margin-top: 30px;
+    }
+}
+
+/*index Layout*/
+
+.mobileHeader{
+    background-color: #446155;
+    padding: 15px 15px;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+.mobileMain{
+    overflow: hidden;
+    margin-top: 100px;
+    background-color: #B3BDB7;
+}
+
+.mobileFooter{
+    background-color: #446155;
+    padding-top: 10px;
+}
+
+.lowerBar, .upperBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lowerBar a{
+    font-size: 0.8rem;
+}
+
+.btn-mobileIcon{
+    width: 40px;
+    height: 35px;
+}
+
+.lowerBar{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.searchIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.mobileSearchBar{
+    text-align: center;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    z-index: 101;
+    bottom: 20px;
+    width: 345px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.inputSearch{
+    width: 240px;
+    height: 36px;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    border-style: none;
+    font-size: 1.2rem;
+    font-family: "Bodoni 72", serif;
+}
+
+.sidemenu{
+    background-color: white;
+    color: black;
+    position: absolute;
+    z-index: 101;
+    top: 0px;
+    left: 0px;
+    width: 170px;
+    padding: 20px 15px;
+}
+
+.headerPart{
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #446155;
+}
+
+.headerPart span{
+    font-size: 1.2rem;
+    font-family: "Bodoni 72", serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.midPart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #446155;
+    width: max-content;
+
+    font-size: 1.2rem;
+    font-family: "Abobe Clean", sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.midPart img{
+    margin-left: 10px;
+}
+
+.entrancesPart{
+    margin-top: 50px;
+}
+
+.entrancesPart p{
+    font-size: 1.2rem;
+    font-family: "Bodoni 72", serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #446155;
+    width: max-content;
+}
+
+.footerPart{
+    margin-top: 100px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #446155;
+}
+
+.footerPart p{
+    margin: 0px;
+    font-family: "Abobe Clean", sans-serif;
+}
+
+.homePhotos{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.homePhotos img{
+    width: 375px;
+}
+
+.imgCategoryEntrances{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.mobileImgBox{
+    margin: 10px 10px;
+    background-color: white;
+    padding-bottom: 7.5px;
+    margin-bottom: 20px;
+}
+
+.imgCategoryEntrances div{
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Bodoni 72", serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
+
+.mobileImgBox img{
+    overflow: hidden;
+    width: 330px;
+    height: 200px;
+}
+
+.virtualConsultation{
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.brandConcept{
+    background-color: #805F53;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.mobile h3{
+    font-size: 1.5rem;
+    margin: 10px 20px;
+    letter-spacing: 1px;
+}
+
+.innerPart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.innerPart p{
+    margin: 0px;
+    width: 80%;
+}
+
+.followUs{
+    background-color: #446155;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    justify-content: space-between;
+    font-family: "Bodoni 72", serif;
+    letter-spacing: 2px;
+}
+
+.followUs div{
+    display: flex;
+    align-items: center;
+}
+
+.followUs img{
+    margin: 5px;
+}
+
+.mobileFooter{
+    font-weight: 300;
+}
+
+.footerUpper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.underLine{
+    border-top: 2px solid white;
+    padding: 10px 0px;
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.copyRight{
+    margin: 0;
+    margin-top: 10px;
+
+}
+
+.footerUpper div{
+    display: flex;
+    align-items: center;
+}
+
+.footerUpper img{
+    margin-right: 5px;
+}
+
+/*Living Room Category Page Layout*/
+
+.furnitureChoices{
+    margin: 50px 0px;
+    padding: 0;
+}
+
+.furnitureChoices li{
+    margin: 15px 0px;
+    padding: 20px 15px;
+    font-size: 1.5rem;
+    font-family: "Bodoni 72", serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #6B7871;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*FabricSofas*/
+
+.productList{
+    padding: 0;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.singleProduct{
+    position: relative;
+    width: 375px;
+    height: 150px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.mobileFavorite{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 0;
+    bottom: 0;
+    z-index: 80;
+}
+
+.mobileProduct{
+    width: 220px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mobileDetails{
+    margin-left: auto;
+    color: black;
+    width: 145px;
+}
+
+.mobilePrice{
+    color: #781715;
+}
+
+.mobileButton{
+    font-family: "Adobe Clean", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    width: 135px;
+    height: 30px;
+    
+}
+
+.turnPage{
+    background-color: #446155;
+    padding-bottom: 10px;
+}
+
+.middlePart{
+    width: 200px;
+    margin: auto;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.middlePart span{
+    color: black;
+}
+
+.pageNumber{
+    width: 20px;
+    font-size: 1rem;
+    padding:5px;
+    text-align: center;
+}
+
+/*Detailed Product Page Layout*/
+
+.mobileNavi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mobileNavi > a{
+    text-decoration: none;
+    color: white;
+}
+
+.mobileNavi > img{
+    margin: 0px 5px
+}
+
+.productInfoMobile{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detailedPhoto{
+    width: max-content;
+    margin: 0px auto;
+}
+
+.imgGroupMobile{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobileProductImg{
+    width: 69px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.shortTextIntro{
+    width: 330px;
+    padding: 10px 0px;
+    margin: auto;
+}
+
+.shortTextIntro h2, .shortTextIntro p{
+    margin: 5px 0px;
+}
+
+.shortTextIntro h2, .mobileCart h2, .mobileOrder h2{
+    font-size: 1.5rem;
+    font-family: "Bodoni 72", serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.shortTextIntro p{
+    font-weight: 300;
+}
+
+.detailedInfoMobile{
+    margin: 20px 15px;
+}
+
+.descriptClick{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    padding-right: 20px;
+    background-color: #B3BDB7;
+}
+
+.detailedInfoMobile h3{
+    font-size: 1.2rem;
+    font-family: "Bodoni 72", serif;
+}
+
+.productDescription{
+    margin-bottom: 20px;
+}
+
+.textDescription{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #B3BDB7;
+}
+
+.textDescription h3{
+    margin: 20px 5px;
+    align-self: flex-start;
+    letter-spacing: 2px;
+}
+
+.textDescription p{
+    margin: 0px 5px;
+    font-weight: 340;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    align-self: flex-start;
+}
+
+.textDescription img{
+    width: 345px;
+    height: 200px;
+}
+
+.fixedFooter{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.addProduct{
+    display: none;
+
+    color: black;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #446155;
+
+    position: fixed;
+    top: 0;
+    left: 5px;
+    right: 5px;
+}
+
+.btnGroups{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.secondConfirm{
+    display: none;
+}
+
+.afterChoose{
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.productDescription label{
+    font-size: 1.2rem;
+    font-family: "Bodoni 72", serif;
+    font-weight: 400;
+}
