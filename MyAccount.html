@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/categoryPage.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+</head>
+<body>
+    <!--Header part-->
+    <header>
+        <!--Functions over the white line-->
+        <div class = "Container upLine" id = "upLine">
+            <img class = "logo" src = "../images/logo.png" alt = "logo"></img>
+            <div class = "Container page">
+                <div class = "btn-header"><a href = "index.html">Home</a></div>
+                <div class = "btn-header" id = "clickBtn"><span id = "textInBtn">Living</span></div>
+                <div class = "btn-header"><span>Dining</span></div>
+                <div class = "btn-header"><span>Bedroom</span></div>
+                <div class = "btn-header"><span>Outdoor</span></div>
+                <div class = "btn-header"><span>Homewares</span></div>
+            </div>
+            <div class = "Container icon">
+                <div class = "btn-header" id = "searchIcon" ><img src = "../images/searchIcon.png"></img></div>
+                <div class = "btn-header" id = "userIcon" ><img src = "../images/userIcon.png"></img></div>
+                <div class = "btn-header" id = "wishListIcon" onclick = "window.location.href = 'Wishlist.html'">
+                    <img src = "../images/wishlistIcon.png"></img></div>
+                <div class = "btn-header" id = "cartIcon" onclick = "window.location.href = 'Cart.html'">
+                    <img src = "../images/cartIcon.png"></img></div>
+            </div>
+        </div>
+        <!--Search Function-->
+        <div class = "searchBar" id = "searchBar">
+            <div class = "Container innerBar">
+                <img id = "closeSearch" src = "../images/closeSearch.png"></img>
+                <div><p>Velvet Sofa</p></div>
+                <a href = "#"><img src = "../images/greenSearch.png"></img></a>
+            </div>
+        </div>
+        <!--Functions under the white line-->
+        <div class = "Container downLine">
+            <div></div>
+            <div class = "Container setting">
+                <div class = "btn-setting" onclick = ""><span>Version - Web</span></div>
+                <div class = "btn-setting" onclick = ""><span>Language - English</span></div>
+                <div class = "btn-setting" onclick = ""><span>Currency - AU$</span></div>
+            </div>
+        </div>
+        <!--Small Living Category in Header-->
+        <div class = "livingCate" id = "categoryName">
+            <div class = "Container living">
+                <div class = "flexColumn">
+                    <div class = "btn"><a href = "FabricSofas.html">Fabric Sofas</a></div>
+                    <div class = "btn"><span>Coffee Tables</span></div>
+                    <div class = "btn"><span>Ottomans</span></div>
+                </div>
+                <div class = "flexColumn">
+                    <div class = "btn"><span>Leather Sofas</span></div>
+                    <div class = "btn"><span>Side Tables</span></div>
+                    <div class = "btn"><span>Office</span></div>
+                </div>
+                <div class = "flexColumn">
+                    <div class = "btn"><span>Occasional Sofas</span></div>
+                    <div class = "btn"><span>Entertainment Tables</span></div>
+                    <div class = "btn"><span>Fabric & Leather Warranty</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Login Function-->
+        <div class = "loginSection flexColumn" id = "loginSection">
+            <div class = "upLogin">
+                <h6>Hi,</h6>
+                <h6>Miss Shirley Friday!</h6>
+                <div class = "btn-login" onclick = "window.location.href = 'MyAccount.html'">
+                    <h6 style="margin-left: 20px;" class = "itemInfo title">My Account</h6>
+                    <img style="margin-left: 20px;" src = "./images/arrow.png"></img></div>
+                <div class = "btn-login" onclick = "window.location.href = 'Order.html'">
+                    <h6 style="margin-left: 20px;" class = "itemInfo title">View My Order</h6>
+                    <img style="margin-left: 20px;" src = "./images/arrow.png"></img></div>          
+            </div>
+            <button class = "btn-confirm green" id = "closeLogin">Continue Shopping</button>
+        </div>
+    </header>
+
+    <!--Sidemenu-->
+    <div class = "sidemenu" id = "sidemenu" style="display: none;">
+        <div id = "normalDisplay">
+            <div class = "headerPart" id = "sidemenuClose">
+                <img src = "./images/leftArraw.png" style="margin-right: 15px;">
+                <span>BACK</span>
+            </div>
+    
+            <div class = "midPart">
+                <span onclick = "window.location.href = 'MyAccount.html'">SHIRLEY</span>
+                <img src = "./images/userIconBlack.png" style = "width: 25px; height: 25px;">
+            </div>
+    
+            <div class = "midPart">
+                <span onclick = "window.location.href = 'Wishlist.html'">WISHLIST</span>
+                <img src = "./images/favoriteIconBlack.png" style = "width: 25px; height: 25px;">
+            </div>
+    
+            <div class = "entrancesPart">
+                <p onclick = "window.location.href = 'index.html'">Home</p>
+                <p id = "livingBtn">Living</p>
+                <p>Dining</p>
+                <p>Bedroom</p>
+                <p>Outdoor</p>
+                <p>Homewares</p>
+            </div>
+    
+            <div class = "footerPart">
+                <p>Support</p>
+                <p>Store Location</p>
+            </div>
+        </div>
+        
+        <div id = "livingDisplay" style = "display: none;">
+            <div class = "headerPart" id = "livingDisplayClose">
+                <img src = "./images/leftArraw.png" style="margin-right: 15px;">
+                <span>BACK</span>
+            </div>
+            <div class = "entrancesPart">
+                <p onclick = "window.location.href = 'FabricSofas.html'">Fabric Sofas</p>
+                <p>Leather Sofas</p>
+                <p style = "width:120px;">Occasional Chairs</p>
+                <p>Coffee Tables</p>
+                <p>Side Tables</p>
+                <p style = "width:120px;">Entertainment Units</p>
+                <p>Ottomans</p>
+                <p>Office</p>
+                <p style = "width:120px;">Fabric & Leather 
+                    Protection Warranties</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Mobile Header-->
+    <div class = "mobile mobileHeader">
+        <div class = "upperBar">
+            <img class = "btn-mobileIcon" src = "./images/hamburgerBar.png" id = "humbargerBar">
+            <img class = "logo" src = "./images/logo.png">
+            <img class = "btn-mobileIcon" src = "./images/cartIcon.png" 
+                onclick="window.location.href='Cart.html'">
+        </div>
+        <div class = "lowerBar">
+            <div class = "naviBar mobileNavi">
+                <a onclick = "window.location.href='MyAccount.html'">My Account</a>
+            </div>
+            <img class = "searchIcon" id = "mobileSearchIcon" src = "./images/searchIcon.png"></img>
+        </div>
+        <!--Mobile Search Function-->
+        <div class = "mobileSearchBar" id = "mobileSearchBar">
+            <input type = "text" class = "inputSearch"/>
+            <img id = "mobileCloseSearch" src = "./images/closeSearch.png" class = "searchIcon"
+                style = "position: absolute; z-index: 101; left: 10px">
+            
+            <img src = "./images/greenSearch.png" class = "searchIcon"
+                style = "position: absolute; z-index: 101; right: 10px;">
+        </div>
+    </div>
+
+    <!--Main Part-->
+    <main class = "myAccount">
+        <div class = "titleLine">
+            <h2>My Account</h2>
+            <button class = "btn-confirm green" onclick = "javascript: history.back(-1)">Continue Shopping</button>
+        </div>
+        <div class = "Container" style="align-items: flex-start;">
+            <div class = "flexColumn personalInfo">
+                <h5 class = "titleForm">Personal Information</h5>
+                <div class = "flexColumn innerForm">
+                    <div class = "group form">
+                        <div class = "flexColumn">
+                            <label>Title</label>
+                            <input type = "text" class = "formInput smallerForm" value = "Miss">
+                        </div>
+                        <div class = "flexColumn">
+                            <label>First Name</label>
+                            <input type = "text" class = "formInput smallerForm" value = "Shirley"/>
+                        </div>
+                        <div class = "flexColumn">
+                            <label>Last Name</label>
+                            <input type = "text" class = "formInput smallerForm" value = "Friday"/>
+                        </div>
+                    </div>
+
+                    <div class = "group form">
+                        <div class = "flexColumn">
+                            <label>Email</label>
+                            <input type = "text" class = "formInput longerInput" value = "abcdefg@gmail.com">
+                        </div>
+                        <div class = "flexColumn">
+                            <label>Phone Number</label>
+                            <input type = "text" class = "formInput smallerForm"/>
+                        </div>
+                    </div>
+
+                    <button class = "btn-confirm brown">Change Details</button>
+                </div>
+            </div>
+            <div class = "flexColumn commonAddress">
+                <h5 class = "titleForm">Commonly Used Address</h5>
+                <div class = "flexColumn innerForm">
+                    <div class = "group form">
+                        <div class = "flexColumn">
+                            <label>Addressee</label>
+                            <input type = "text" class = "formInput smallerForm" value = "Shirley Friday"/>
+                        </div>
+                        <div class = "flexColumn">
+                            <label>Phone Number</label>
+                            <input type = "text" class = "formInput smallerForm" value = "+61 0000000"/>
+                        </div>
+                    </div>
+                    <div class = "group form">
+                        <div class = "flexColumn">
+                            <label>Street</label>
+                            <input type = "text" class = "formInput smallerForm" value = "123 Street ST"/>
+                        </div>
+                        <div class = "flexColumn">
+                            <label>City</label>
+                            <input type = "text" class = "formInput smallerForm" value = "City"/>
+                        </div>
+                    </div>
+                    <div class = "group form">
+                        <div class = "flexColumn">
+                            <label>State</label>
+                            <input type = "text" class = "formInput smallerForm" value = "State"/>
+                        </div>
+                        <div class = "flexColumn">
+                            <label>Postcode</label>
+                            <input type = "text" class = "formInput smallerForm" value = "0000"/>
+                        </div>
+                    </div>
+                    <div class = "group form">
+                        <div class = "flexColumn">
+                            <label>Country</label>
+                            <input type = "text" class = "formInput smallerForm" value = "Country"/>
+                        </div>
+                    </div>
+                    <button class = "btn-confirm brown">Change Address</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Mobile Main Part-->
+    <div class = "mobile mobileMain" style = "background-color: white; color:black;">
+        <div class = "titleLine mobileTitle" style="margin: 0px 15px; padding-bottom: 20px; margin-top: 50px;">
+            <h2>Miss Shirley Friday</h2>
+        </div>
+        <div class = "productDescription" style = "margin: 20px 15px;">
+            <div class = "descriptClick">
+                <h3 style = "font-family: 'Bodoni 72', serif; font-size: 1.2rem;">Personal Information</h3>
+                <div><img src = "./images/blackSetting.png"></div>
+            </div>
+            <div class = "flexColumn innerForm">
+                <div class = "flexColumn" style="margin-bottom: 10px;">
+                    <label>Title</label>
+                    <input type = "text" class = "formInput smallerForm" value = "Miss" style="width: 150px;" />
+                </div>
+                <div class = "group form" style="margin-bottom: 10px;">
+                    <div class = "flexColumn">
+                        <label>First Name</label>
+                        <input type = "text" class = "formInput smallerForm" value = "Shirley" style="width: 150px;"/>
+                    </div>
+                    <div class = "flexColumn">
+                        <label>Last Name</label>
+                        <input type = "text" class = "formInput smallerForm" value = "Friday" style="width: 150px;"/>
+                    </div>
+                </div>
+
+                <div class = "flexColumn" style="margin-bottom: 10px;">
+                    <label>Email</label>
+                    <input type = "text" class = "formInput longerInput" value = "abcdefg@gmail.com" 
+                        style="width: 98%;"/>
+                </div>
+                <div class = "flexColumn" style="margin-bottom: 10px;">
+                    <label>Phone Number</label>
+                    <input type = "text" class = "formInput smallerForm" style="width: 98%;"/>
+                </div>
+            </div>
+        </div>
+        <div class = "productDescription" style = "margin: 20px 15px;">
+            <div class = "descriptClick">
+                <h3 style = "font-family: 'Bodoni 72', serif; font-size: 1.2rem;">Commonly Used Address</h3>
+                <div><img src = "./images/blackSetting.png"></div>
+            </div>
+            <div class = "flexColumn innerForm">
+                <div class = "flexColumn" style="margin-bottom: 10px;">
+                    <label>Street</label>
+                    <input type = "text" class = "formInput longerInput" style="width: 98%;"/>
+                </div>
+                <div class = "group form" style="margin-bottom: 10px;">
+                    <div class = "flexColumn">
+                        <label>City</label>
+                        <input type = "text" class = "formInput smallerForm" value = "Shirley" style="width: 150px;"/>
+                    </div>
+                    <div class = "flexColumn">
+                        <label>State</label>
+                        <input type = "text" class = "formInput smallerForm" value = "Friday" style="width: 150px;"/>
+                    </div>
+                </div>
+                <div class = "group form" style="margin-bottom: 10px;">
+                    <div class = "flexColumn">
+                        <label>Postcode</label>
+                        <input type = "text" class = "formInput smallerForm" value = "Shirley" style="width: 150px;"/>
+                    </div>
+                    <div class = "flexColumn">
+                        <label>Country</label>
+                        <input type = "text" class = "formInput smallerForm" value = "Friday" style="width: 150px;"/>
+                    </div>
+                </div>
+
+                <div class = "flexColumn" style="margin-bottom: 10px;">
+                    <label>Phone Number</label>
+                    <input type = "text" class = "formInput smallerForm" style="width: 98%;"/>
+                </div>
+            </div>
+        </div>
+        <div class = "productDescription" style = "margin: 20px 15px;">
+            <div class = "descriptClick" onclick = "window.location.href='Order.html'">
+                <h3 style = "font-family: 'Bodoni 72', serif; font-size: 1.2rem;">Shopping Orders</h3>
+                <div><img src = "./images/rightArraw.png"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer part-->
+    <footer>
+        <div class = "leftSide">
+
+            <div class = "upSide">
+                <a class = "info" href = "#">Store Location</a>
+                <a class = "info" href = "#">Support</a>
+            </div>
+            <div class = "downSide">
+                <p>Email Address: cs@koalaliving.com</p>
+                <p>Contact Number: 1800 098 202</p>
+            </div>
+        </div>
+
+        <div class = "rightSide">
+            <div class = "upSide">
+                <p>Follow Us @Koala_living</p>
+            </div>
+            <div class = "downSide">
+                <p>Copyright 2019 Koala Living</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./js/sidemenu.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/smallCategory.js"></script>
+    <script src="./js/loginFunction.js"></script>
+    
+</body>
+</html>
