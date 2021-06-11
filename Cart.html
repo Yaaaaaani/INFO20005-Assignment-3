@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/categoryPage.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+</head>
+<body>
+    <!--Header part-->
+    <header>
+        <!--Functions over the white line-->
+        <div class = "Container upLine" id = "upLine">
+            <img class = "logo" src = "../images/logo.png" alt = "logo"></img>
+            <div class = "Container page">
+                <div class = "btn-header"><a href = "index.html">Home</a></div>
+                <div class = "btn-header" id = "clickBtn"><span id = "textInBtn">Living</span></div>
+                <div class = "btn-header"><span>Dining</span></div>
+                <div class = "btn-header"><span>Bedroom</span></div>
+                <div class = "btn-header"><span>Outdoor</span></div>
+                <div class = "btn-header"><span>Homewares</span></div>
+            </div>
+            <div class = "Container icon">
+                <div class = "btn-header" id = "searchIcon" ><img src = "../images/searchIcon.png"></img></div>
+                <div class = "btn-header" id = "userIcon" ><img src = "../images/userIcon.png"></img></div>
+                <div class = "btn-header" id = "wishListIcon" onclick = "window.location.href = 'Wishlist.html'">
+                    <img src = "../images/wishlistIcon.png"></img></div>
+                <div class = "btn-header" id = "cartIcon" onclick = "window.location.href = 'Cart.html'">
+                    <img src = "../images/cartIcon.png"></img></div>
+            </div>
+        </div>
+        <!--Search Function-->
+        <div class = "searchBar" id = "searchBar">
+            <div class = "Container innerBar">
+                <img id = "closeSearch" src = "../images/closeSearch.png"></img>
+                <div><p>Velvet Sofa</p></div>
+                <a href = "#"><img src = "../images/greenSearch.png"></img></a>
+            </div>
+        </div>
+        <!--Functions under the white line-->
+        <div class = "Container downLine">
+            <div></div>
+            <div class = "Container setting">
+                <div class = "btn-setting" onclick = ""><span>Version - Web</span></div>
+                <div class = "btn-setting" onclick = ""><span>Language - English</span></div>
+                <div class = "btn-setting" onclick = ""><span>Currency - AU$</span></div>
+            </div>
+        </div>
+        <!--Small Living Category in Header-->
+        <div class = "livingCate" id = "categoryName">
+            <div class = "Container living">
+                <div class = "flexColumn">
+                    <div class = "btn"><a href = "FabricSofas.html">Fabric Sofas</a></div>
+                    <div class = "btn"><span>Coffee Tables</span></div>
+                    <div class = "btn"><span>Ottomans</span></div>
+                </div>
+                <div class = "flexColumn">
+                    <div class = "btn"><span>Leather Sofas</span></div>
+                    <div class = "btn"><span>Side Tables</span></div>
+                    <div class = "btn"><span>Office</span></div>
+                </div>
+                <div class = "flexColumn">
+                    <div class = "btn"><span>Occasional Sofas</span></div>
+                    <div class = "btn"><span>Entertainment Tables</span></div>
+                    <div class = "btn"><span>Fabric & Leather Warranty</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Confirm Frame-->
+        <div class = "confirm" id = "addCartConfirm">
+            <h4>It has been <span>successfully added</span>! There is <span>1 item</span> in your Cart!</h4>
+            <div class = "btns-confirm">
+                <button id = "viewCart" class = "btn-confirm brown">View Cart</button>
+                <button id = "closeCart" class = "btn-confirm green">Continue Shopping</button>
+            </div>
+        </div>
+
+        <!--Login Function-->
+        <div class = "loginSection flexColumn" id = "loginSection">
+            <div class = "upLogin">
+                <h6>Hi,</h6>
+                <h6>Miss Shirley Friday!</h6>
+                <div class = "btn-login" onclick = "window.location.href = 'MyAccount.html'">
+                    <h6 style="margin-left: 20px;" class = "itemInfo title">My Account</h6>
+                    <img style="margin-left: 20px;" src = "./images/arrow.png"></img></div>
+                <div class = "btn-login" onclick = "window.location.href = 'Order.html'">
+                    <h6 style="margin-left: 20px;" class = "itemInfo title">View My Order</h6>
+                    <img style="margin-left: 20px;" src = "./images/arrow.png"></img></div>          
+            </div>
+            <button class = "btn-confirm green" id = "closeLogin">Continue Shopping</button>
+        </div>
+    </header>
+
+    <!--Mobile Header-->
+    <!--Sidemenu-->
+    <div class = "sidemenu" id = "sidemenu" style="display: none;">
+        <div id = "normalDisplay">
+            <div class = "headerPart" id = "sidemenuClose">
+                <img src = "./images/leftArraw.png" style="margin-right: 15px;">
+                <span>BACK</span>
+            </div>
+    
+            <div class = "midPart">
+                <span onclick = "window.location.href = 'MyAccount.html'">SHIRLEY</span>
+                <img src = "./images/userIconBlack.png" style = "width: 25px; height: 25px;">
+            </div>
+    
+            <div class = "midPart">
+                <span onclick = "window.location.href = 'Wishlist.html'">WISHLIST</span>
+                <img src = "./images/favoriteIconBlack.png" style = "width: 25px; height: 25px;">
+            </div>
+    
+            <div class = "entrancesPart">
+                <p onclick = "window.location.href = 'index.html'">Home</p>
+                <p id = "livingBtn">Living</p>
+                <p>Dining</p>
+                <p>Bedroom</p>
+                <p>Outdoor</p>
+                <p>Homewares</p>
+            </div>
+    
+            <div class = "footerPart">
+                <p>Support</p>
+                <p>Store Location</p>
+            </div>
+        </div>
+        
+        <div id = "livingDisplay" style = "display: none;">
+            <div class = "headerPart" id = "livingDisplayClose">
+                <img src = "./images/leftArraw.png" style="margin-right: 15px;">
+                <span>BACK</span>
+            </div>
+            <div class = "entrancesPart">
+                <p onclick = "window.location.href = 'FabricSofas.html'">Fabric Sofas</p>
+                <p>Leather Sofas</p>
+                <p style = "width:120px;">Occasional Chairs</p>
+                <p>Coffee Tables</p>
+                <p>Side Tables</p>
+                <p style = "width:120px;">Entertainment Units</p>
+                <p>Ottomans</p>
+                <p>Office</p>
+                <p style = "width:120px;">Fabric & Leather 
+                    Protection Warranties</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Mobile Header-->
+    <div class = "mobile mobileHeader">
+        <div class = "upperBar">
+            <img class = "btn-mobileIcon" src = "./images/hamburgerBar.png" id = "humbargerBar">
+            <img class = "logo" src = "./images/logo.png">
+            <img class = "btn-mobileIcon" src = "./images/cartIcon.png" 
+                onclick="window.location.href='Cart.html'">
+        </div>
+        <div class = "lowerBar">
+            <div class = "naviBar mobileNavi">
+                <a onclick = "javascript: history.back(-1)">Back to Shopping</a>
+            </div>
+            <img class = "searchIcon" id = "mobileSearchIcon" src = "./images/searchIcon.png"></img>
+        </div>
+        <!--Mobile Search Function-->
+        <div class = "mobileSearchBar" id = "mobileSearchBar">
+            <input type = "text" class = "inputSearch"/>
+            <img id = "mobileCloseSearch" src = "./images/closeSearch.png" class = "searchIcon"
+                style = "position: absolute; z-index: 101; left: 10px">
+            
+            <img src = "./images/greenSearch.png" class = "searchIcon"
+                style = "position: absolute; z-index: 101; right: 10px;">
+        </div>
+    </div>
+
+    <!--Main-->
+    <main>
+        <div class = "titleLine">
+            <div class = "leftTitle">
+                <h2>Shopping Cart</h2>
+                <p>1 item</p>
+                <button class = "btn-confirm lightBrown">Clear All Product</button>
+                <p class = "orderTotal hidden" id = "orderTotal">Order Total: $1999.00</p>
+                <button class = "btn-confirm brown hidden" id = "proceedCheckout" onclick = "window.location.href = 'Checkout.html'">
+                    Proceed to Checkout</button>
+            </div>
+            <button class = "btn-confirm green" onclick = "javascript: history.back(-1)">Continue Shopping</button>
+        </div>
+        <div class = "itemList">
+            <div class = "item1 cart">
+                <img class = "smallProductPht" src = "./images/Sofas/sofa1.png"></img>
+                <h5>Paolo 3-Seater Electric Recliner</h5>
+                <div class = "group">
+                    <p>Color:</p>
+                    <img class = "color" src = "./images/color.png"></img>
+                </div>
+                <div class = "group">
+                    <p>Quantity:</p>
+                    <img class = "minus" src = "./images/minus.png"></img>
+                    <p class = "qty">1</p>
+                    <img class = "plus" src = "./images/plus.png"></img>
+                </div>
+                <div class = "group"><p>Price: $1999.00</p></div>
+                <div class = "itemCheckbox">
+                    <input type = "checkbox" value = "1" id = "chooseItem" class = "chooseItem" />
+                </div>
+                <div class = "group redText hidden" id = "subtotal"><p>Subtotal: $1999.00</p>
+            </div>
+        </div>
+    </main>
+
+    <!--Mobile Main Part-->
+    <div class = "mobile mobileMain" style = "background-color: white; color:black;">
+        <div class = "titleLine mobileTitle" style="margin: 0px 15px; padding-bottom: 20px;  margin-top: 50px;">
+            <h2>Shopping Cart</h2>
+            <button class = "mobileButton lightBrown">Clear All</button>
+        </div>
+        <div class = "itemList" id = "mobileItem">
+            <div class = "item1 cart mobileCart" style="margin: 0px auto; height: 450px;">
+                <img class = "smallProductPht" src = "./images/Sofas/sofa1.png"></img>
+                <h2 style="font-size: 1.2rem;">Paolo 3-Seater Electric Recliner</h2>
+                <div class = "group">
+                    <p>Color:</p>
+                    <img class = "color" src = "./images/color.png"></img>
+                </div>
+                <div class = "group">
+                    <p>Quantity:</p>
+                    <img style = "width: 20px; height: 5px;" class = "minus" src = "./images/minus.png"></img>
+                    <p class = "qty">1</p>
+                    <img style = "width: 20px; height: 20px;" class = "plus" src = "./images/plus.png"></img>
+                </div>
+                <div class = "group"><p>Price: $1999.00</p></div>
+                <div class = "itemCheckbox">
+                    <input type = "checkbox" value = "1" id = "chooseItemMobile" class = "chooseItem" />
+                </div>
+                <div class = "group redText hidden" id = "subtotalMobile"><p>Subtotal: $1999.00</p>
+            </div>
+        </div>
+        <div class = "afterChoose">
+            <p class = "orderTotal hidden" id = "orderTotalMobile">Order Total: $1999.00</p>
+            <button class = "btn-confirm brown hidden" id = "proceedCheckoutMobile" onclick = "window.location.href = 'Checkout.html'">
+                Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!--Footer part-->
+    <footer>
+        <div class = "leftSide">
+
+            <div class = "upSide">
+                <a class = "info" href = "#">Store Location</a>
+                <a class = "info" href = "#">Support</a>
+            </div>
+            <div class = "downSide">
+                <p>Email Address: cs@koalaliving.com</p>
+                <p>Contact Number: 1800 098 202</p>
+            </div>
+        </div>
+
+        <div class = "rightSide">
+            <div class = "upSide">
+                <p>Follow Us @Koala_living</p>
+            </div>
+            <div class = "downSide">
+                <p>Copyright 2019 Koala Living</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./js/sidemenu.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/smallCategory.js"></script>
+    <script src="./js/chooseItem.js"></script>
+    <script src="./js/loginFunction.js"></script>
+</body>
+</html>
