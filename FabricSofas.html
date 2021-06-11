@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabrics Sofas</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/categoryPage.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+</head>
+<body>
+    <!--Header part-->
+    <header>
+        <!--Functions over the white line-->
+        <div class = "Container upLine" id = "upLine">
+            <img class = "logo" src = "../images/logo.png" alt = "logo"></img>
+            <div class = "Container page">
+                <div class = "btn-header"><a href = "index.html">Home</a></div>
+                <div class = "btn-header" id = "clickBtn"><span id = "textInBtn">Living</span></div>
+                <div class = "btn-header"><span>Dining</span></div>
+                <div class = "btn-header"><span>Bedroom</span></div>
+                <div class = "btn-header"><span>Outdoor</span></div>
+                <div class = "btn-header"><span>Homewares</span></div>
+            </div>
+            <div class = "Container icon">
+                <div class = "btn-header" id = "searchIcon" ><img src = "../images/searchIcon.png"></img></div>
+                <div class = "btn-header" id = "userIcon" ><img src = "../images/userIcon.png"></img></div>
+                <div class = "btn-header" id = "wishListIcon" onclick = "window.location.href = 'Wishlist.html'">
+                    <img src = "../images/wishlistIcon.png"></img></div>
+                <div class = "btn-header" id = "cartIcon" onclick = "window.location.href = 'Cart.html'">
+                    <img src = "../images/cartIcon.png"></img></div>
+            </div>
+        </div>
+        <!--Search Function-->
+        <div class = "searchBar" id = "searchBar">
+            <div class = "Container innerBar">
+                <img id = "closeSearch" src = "../images/closeSearch.png"></img>
+                <div><p>Velvet Sofa</p></div>
+                <a href = "#"><img src = "../images/greenSearch.png"></img></a>
+            </div>
+        </div>
+        <!--Functions under the white line-->
+        <div class = "Container downLine">
+
+            <div class = "naviBar">
+                <a href = "index.html">Home</a>
+                <img src = "./images/naviLine.png"></img>
+                <a href = "Living.html">Living Room</a>
+                <img src = "./images/naviLine.png"></img>
+                <a>Fabric Sofas</a>
+            </div>
+
+            <div class = "Container setting">
+                <div class = "btn-setting" onclick = ""><span>Version - Web</span></div>
+                <div class = "btn-setting" onclick = ""><span>Language - English</span></div>
+                <div class = "btn-setting" onclick = ""><span>Currency - AU$</span></div>
+            </div>
+        </div>
+        <!--Small Category of living room furnitures in Header-->
+        <div class = "livingCate" id = "categoryName">
+            <div class = "Container living">
+                <div class = "flexColumn">
+                    <div class = "btn"><a href = "FabricSofas.html">Fabric Sofas</a></div>
+                    <div class = "btn"><span>Coffee Tables</span></div>
+                    <div class = "btn"><span>Ottomans</span></div>
+                </div>
+                <div class = "flexColumn">
+                    <div class = "btn"><span>Leather Sofas</span></div>
+                    <div class = "btn"><span>Side Tables</span></div>
+                    <div class = "btn"><span>Office</span></div>
+                </div>
+                <div class = "flexColumn">
+                    <div class = "btn"><span>Occasional Sofas</span></div>
+                    <div class = "btn"><span>Entertainment Tables</span></div>
+                    <div class = "btn"><span>Fabric & Leather Warranty</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Confirm Frame-->
+        <div class = "confirm" id = "favoriteConfirm">
+            <h4>It has been <span>successfully added</span>! You can find it in Wishlist!</h4>
+            <div class = "btns-confirm">
+                <button id = "viewWishList" class = "btn-confirm brown">View Wishlist</button>
+                <button id = "closeFavorite" class = "btn-confirm green">Continue Shopping</button>
+            </div>
+        </div>
+
+        <div class = "confirm" id = "addCartConfirm">
+            <h4>It has been <span>successfully added</span>! There is <span>1 item</span> in your Cart!</h4>
+            <div class = "btns-confirm">
+                <button id = "viewCart" class = "btn-confirm brown">View Cart</button>
+                <button id = "closeCart" class = "btn-confirm green">Continue Shopping</button>
+            </div>
+        </div>
+
+        <!--Login Function-->
+        <div class = "loginSection flexColumn" id = "loginSection">
+            <div class = "upLogin">
+                <h6>Hi,</h6>
+                <h6>Miss Shirley Friday!</h6>
+                <div class = "btn-login" onclick = "window.location.href = 'MyAccount.html'">
+                    <h6 style="margin-left: 20px;" class = "itemInfo title">My Account</h6>
+                    <img style="margin-left: 20px;" src = "./images/arrow.png"></img></div>
+                <div class = "btn-login" onclick = "window.location.href = 'Order.html'">
+                    <h6 style="margin-left: 20px;" class = "itemInfo title">View My Order</h6>
+                    <img style="margin-left: 20px;" src = "./images/arrow.png"></img></div>          
+            </div>
+            <button class = "btn-confirm green" id = "closeLogin">Continue Shopping</button>
+        </div>
+    </header>
+
+    <!--Sidemenu-->
+    <div class = "sidemenu" id = "sidemenu" style="display: none;">
+        <div id = "normalDisplay">
+            <div class = "headerPart" id = "sidemenuClose">
+                <img src = "./images/leftArraw.png" style="margin-right: 15px;">
+                <span>BACK</span>
+            </div>
+    
+            <div class = "midPart">
+                <span onclick = "window.location.href = 'MyAccount.html'">SHIRLEY</span>
+                <img src = "./images/userIconBlack.png" style = "width: 25px; height: 25px;">
+            </div>
+    
+            <div class = "midPart">
+                <span onclick = "window.location.href = 'Wishlist.html'">WISHLIST</span>
+                <img src = "./images/favoriteIconBlack.png" style = "width: 25px; height: 25px;">
+            </div>
+    
+            <div class = "entrancesPart">
+                <p onclick = "window.location.href = 'index.html'">Home</p>
+                <p id = "livingBtn">Living</p>
+                <p>Dining</p>
+                <p>Bedroom</p>
+                <p>Outdoor</p>
+                <p>Homewares</p>
+            </div>
+    
+            <div class = "footerPart">
+                <p>Support</p>
+                <p>Store Location</p>
+            </div>
+        </div>
+        
+        <div id = "livingDisplay" style = "display: none;">
+            <div class = "headerPart" id = "livingDisplayClose">
+                <img src = "./images/leftArraw.png" style="margin-right: 15px;">
+                <span>BACK</span>
+            </div>
+            <div class = "entrancesPart">
+                <p onclick = "window.location.href = 'FabricSofas.html'">Fabric Sofas</p>
+                <p>Leather Sofas</p>
+                <p style = "width:120px;">Occasional Chairs</p>
+                <p>Coffee Tables</p>
+                <p>Side Tables</p>
+                <p style = "width:120px;">Entertainment Units</p>
+                <p>Ottomans</p>
+                <p>Office</p>
+                <p style = "width:120px;">Fabric & Leather 
+                    Protection Warranties</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Mobile Header-->
+    <div class = "mobile mobileHeader">
+        <div class = "upperBar">
+            <img class = "btn-mobileIcon" src = "./images/hamburgerBar.png" id = "humbargerBar">
+            <img class = "logo" src = "./images/logo.png">
+            <img class = "btn-mobileIcon" src = "./images/cartIcon.png" 
+                onclick="window.location.href='Cart.html'">
+        </div>
+        <div class = "lowerBar">
+            <div class = "naviBar">
+                <a href = "index.html">Home</a>
+                <img style= "width: 15px; height: 2px;" src = "./images/naviLine.png"></img>
+                <a href = "Living.html">Living Room</a>
+                <img style= "width: 15px; height: 2px;" src = "./images/naviLine.png"></img>
+                <a>Fabric Sofas</a>
+            </div>
+            <img class = "searchIcon" id = "mobileSearchIcon" src = "./images/searchIcon.png"></img>
+        </div>
+
+        <!--Mobile Search Function-->
+        <div class = "mobileSearchBar" id = "mobileSearchBar">
+            <input type = "text" class = "inputSearch"/>
+            <img id = "mobileCloseSearch" src = "./images/closeSearch.png" class = "searchIcon"
+                style = "position: absolute; z-index: 101; left: 10px">
+            
+            <img src = "./images/greenSearch.png" class = "searchIcon"
+                style = "position: absolute; z-index: 101; right: 10px;">
+        </div>
+
+        <!--Mobile Add Product Confirmation-->
+        <div class = "addProduct" id = "addProduct">
+            <div class = "firstConfirm" id = "firstConfirm">
+                <div class = "group">
+                    <p>Color:</p>
+                    <img class = "color" src = "./images/color.png"></img>
+                </div>
+                <div class = "group">
+                    <p>Quantity:</p>
+                    <img style = "width: 20px; height: 5px;" class = "minus" src = "./images/minus.png"></img>
+                    <p class = "qty">1</p>
+                    <img style = "width: 20px; height: 20px;" class = "plus" src = "./images/plus.png"></img>
+                </div>
+                <div class = "btnGroups">
+                    <button class = "mobileButton green" id = "mobileCancel">Cancel</button>
+                    <button class = "mobileButton brown"id = "confirmBtn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class = "secondConfirm" id = "secondConfirm">
+                <h4 style="font-weight: 400;">It has been <span>successfully added</span>! There is <span>1 item</span> in your Cart!</h4>
+                <div class = "btns-confirm" style="flex-direction: column; width: max-content;">
+                    <button onclick = "window.location.href = 'Cart.html'" class = "btn-confirm brown" 
+                        style="margin: 0px auto; width: 300px; margin-bottom: 10px;">
+                        View Cart
+                    </button>
+                    <button id = "mobileCloseReminder" class = "btn-confirm green" 
+                        style="margin: 0px auto; width: 300px">
+                        Continue Shopping
+                    </button>
+                </div>
+            </div>
+
+            <div class = "wishlistConfirm" id = "wishlistConfirm" style = "display: none;">
+                <h4 style="font-weight: 400;">It has been <span>successfully added</span>! You can find it in Wishlist!</h4>
+                <div class = "btns-confirm" style="flex-direction: column; width: max-content;">
+                    <button onclick = "window.location.href = 'Wishlist.html'" class = "btn-confirm brown" 
+                        style="margin: 0px auto; width: 300px; margin-bottom: 10px;">
+                        View Wishlist
+                    </button>
+                    <button id = "mobileCloseFavorite" class = "btn-confirm green" 
+                        style="margin: 0px auto; width: 300px">
+                        Continue Shopping
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Main part-->
+    <main class = "categoryPage" id = "main">
+        <img src = "./images/Sofas/fabricSofas.png" alt = "Welcome to Fabric Sofas Page"></img>
+        <h1>Fabric Sofas</h1>
+        <p>Is your living room missing something? Take a look at our latest fabric sofas designs and choose one according
+             to the soul of your living room area to make it feel alive.
+              We bring you a wide range of modular fabric sofas…<span onlick = "" class = "fullInfo">Learn More</span>
+        </p>
+
+        <div class = "background">
+            <div class = "filterSection">
+                <div class = "filter">
+                    <h3>Sort By</h3>
+                    <div class = "btns">
+                        <div class = "btn-filter choosed"><span>Position</span></div>
+                        <div class = "btn-filter"><span>Name</span></div>
+                        <div class = "btn-filter"><span>Price</span></div>
+                    </div>
+                </div>
+                <div class = "filter">
+                    <h3>Sort Order</h3>
+                    <div class = "icons">
+                        <div class = "icon-filter choosed"><img src = "./images/sortOrder1.png"></img></div>
+                        <div class = "icon-filter"><img src = "./images/sortOrder2.png"></img></div>
+                    </div>
+                    
+                </div>
+                <div class = "filter">
+                    <h3>Price Interval</h3>  
+                    <div class = "btns">
+                        <div class = "btn-filter"><span>$1,100.00 - $1,499.00</span></div>
+                        <div class = "btn-filter"><span>$1,500.00 - $1,999.00</span></div>
+                        <div class = "btn-filter"><span>$2,000.00 - $2,499.00</span></div>
+                        <div class = "btn-filter"><span>$2,500.00 - $2,999.00</span></div>
+                        <div class = "btn-filter"><span>More than $2,999.00</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "Container fabricSofas">
+                <div class = "flexColumn fabricCol">
+                    <div class = "imgBox">
+                        <img id = "favorite" class = "favorite" src = "./images/addWishList.png"></img>
+                        <a href = "DetailedProduct.html"><img class = "product" src = "./images/Sofas/sofa1.png"></img></a>
+                        <div class = "details">
+                            <p class = "name">Paolo 3-Seater Electric Recliner</p>
+                            <p class = "price">$1999.00</p>
+                            <button id = "addCartIcon">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class = "imgBox">
+                        <img class = "favorite" src = "./images/addWishList.png"></img>
+                        <a><img class = "product" src = "./images/Sofas/sofa2.png"></img></a>
+                        <div class = "details">
+                            <p class = "name">Astoria II Velvet Sofa 2 Seater</p>
+                            <p class = "price">$1999.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class = "imgBox">
+                        <img class = "favorite" src = "./images/addWishList.png"></img>
+                        <a><img class = "product" src = "./images/Sofas/sofa3.png"></img></a>
+                        <div class = "details">
+                            <p class = "name">Albany Right Chaise Lounge</p>
+                            <p class = "price">$1999.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "flexColumn fabricCol">
+                    <div class = "imgBox">
+                        <img class = "favorite" src = "./images/addWishList.png"></img>
+                        <a><img class = "product" src = "./images/Sofas/sofa4.png"></img></a>
+                        <div class = "details">
+                            <p class = "name">Paolo 2-Seater Electric Recliner</p>
+                            <p class = "price">$1999.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class = "imgBox">
+                        <img class = "favorite" src = "./images/addWishList.png"></img>
+                        <a><img class = "product" src = "./images/Sofas/sofa5.png"></img></a>
+                        <div class = "details">
+                            <p class = "name">Astoria II Velvet Chair</p>
+                            <p class = "price">$1999.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class = "imgBox">
+                        <img class = "favorite" src = "./images/addWishList.png"></img>
+                        <a><img class = "product" src = "./images/Sofas/sofa6.png"></img></a>
+                        <div class = "details">
+                            <p class = "name">Albany Left Chaise Lounge</p>
+                            <p class = "price">$1999.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "flexColumn fabricCol">
+                    <div class = "imgBox">
+                        <img class = "favorite" src = "./images/addWishList.png"></img>
+                        <a><img class = "product" src = "./images/Sofas/sofa7.png"></img></a>
+                        <div class = "details">
+                            <p class = "name">Astoria II Velvet Sofa 3 Seater</p>
+                            <p class = "price">$1999.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class = "imgBox">
+                        <img class = "favorite" src = "./images/addWishList.png"></img>
+                        <a><img class = "product" src = "./images/Sofas/sofa8.png"></img></a>
+                        <div class = "details">
+                            <p class = "name">Astoria II Velvet Sofa 3 Seater</p>
+                            <p class = "price">$1999.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class = "imgBox">
+                        <img class = "favorite" src = "./images/addWishList.png"></img>
+                        <a><img class = "product" src = "./images/Sofas/sofa9.png"></img></a>
+                        <div class = "details">
+                            <p class = "name">Manuel 3 Seater Sofa</p>
+                            <p class = "price">$1999.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class = "turnPage" style = "padding-bottom: 50px; background-color: #B3BDB7;">
+                <div class = "middlePart" style = "width: 500px;">
+                    <img src = "./images/leftArraw.png">
+                    <div>
+                        <span style = "font-size: 1.2rem;">Page</span>
+                        <input class = "pageNumber" type = "number" value="1">
+                    </div>
+                    <img src = "./images/rightArraw.png">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Mobile Main Part-->
+    <div class = "mobile mobileMain" style = "background-color: #FAFAFA">
+        <ul class = "furnitureChoices" style = "margin: 50px 0px; margin-bottom: 20px;">
+            <li>Fabric Sofas <img onclick="window.location.href='MobileSetting.html'"src="./images/settingIcon.png"></li>
+        </ul>
+        <div class = "productList">
+            <div class = "singleProduct">
+                <img id = "mobileFavorite" class = "mobileFavorite" style = "cursor: pointer" src = "./images/smallerFavourite.png">
+                <img class = "mobileProduct" src = "./images/Sofas/sofa1.png" onclick = "window.location.href = 'DetailedProduct.html'">
+                <div class = "mobileDetails">
+                    <p class = "mobileName" onclick = "window.location.href = 'DetailedProduct.html'">Paolo 3-Seater Electric Recliner</p>
+                    <p class = "mobilePrice" onclick = "window.location.href = 'DetailedProduct.html'">$1999.00</p>
+                    <button class = "mobileButton brown"id = "mobileAddCart">Add to Cart</button>
+                </div>
+            </div>
+            <div class = "singleProduct">
+                <img class = "mobileFavorite" src = "./images/smallerFavourite.png">
+                <img class = "mobileProduct" src = "./images/Sofas/sofa2.png">
+                <div class = "mobileDetails">
+                    <p class = "mobileName">Paolo 2-Seater Electric Recliner</p>
+                    <p class = "mobilePrice">$1999.00</p>
+                    <button class = "mobileButton brown">Add to Cart</button>
+                </div>
+            </div>
+            <div class = "singleProduct">
+                <img class = "mobileFavorite" src = "./images/smallerFavourite.png">
+                <img class = "mobileProduct" src = "./images/Sofas/sofa3.png">
+                <div class = "mobileDetails">
+                    <p class = "mobileName">Astoria II Velvet Sofa 3 Seater</p>
+                    <p class = "mobilePrice">$1999.00</p>
+                    <button class = "mobileButton brown">Add to Cart</button>
+                </div>
+            </div>
+            <div class = "singleProduct">
+                <img class = "mobileFavorite" src = "./images/smallerFavourite.png">
+                <img class = "mobileProduct" src = "./images/Sofas/sofa4.png">
+                <div class = "mobileDetails">
+                    <p class = "mobileName">Astoria II Velvet Sofa 2 Seater</p>
+                    <p class = "mobilePrice">$1999.00</p>
+                    <button class = "mobileButton brown">Add to Cart</button>
+                </div>
+            </div>
+            <div class = "singleProduct">
+                <img class = "mobileFavorite" src = "./images/smallerFavourite.png">
+                <img class = "mobileProduct" src = "./images/Sofas/sofa5.png">
+                <div class = "mobileDetails">
+                    <p class = "mobileName">Astoria II Velvet Chair</p>
+                    <p class = "mobilePrice">$1999.00</p>
+                    <button class = "mobileButton brown">Add to Cart</button>
+                </div>
+            </div>
+            <div class = "singleProduct">
+                <img class = "mobileFavorite" src = "./images/smallerFavourite.png">
+                <img class = "mobileProduct" src = "./images/Sofas/sofa6.png">
+                <div class = "mobileDetails">
+                    <p class = "mobileName">Andrey Corner Sofa</p>
+                    <p class = "mobilePrice">$1999.00</p>
+                    <button class = "mobileButton brown">Add to Cart</button>
+                </div>
+            </div>
+            <div class = "singleProduct">
+                <img class = "mobileFavorite" src = "./images/smallerFavourite.png">
+                <img class = "mobileProduct" src = "./images/Sofas/sofa7.png">
+                <div class = "mobileDetails">
+                    <p class = "mobileName">Albany Right Chaise Lounge</p>
+                    <p class = "mobilePrice">$1999.00</p>
+                    <button class = "mobileButton brown">Add to Cart</button>
+                </div>
+            </div>
+            <div class = "singleProduct">
+                <img class = "mobileFavorite" src = "./images/smallerFavourite.png">
+                <img class = "mobileProduct" src = "./images/Sofas/sofa8.png">
+                <div class = "mobileDetails">
+                    <p class = "mobileName">Albany Left Chaise Lounge</p>
+                    <p class = "mobilePrice">$1999.00</p>
+                    <button class = "mobileButton brown">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer part-->
+    <footer>
+        <div class = "leftSide">
+
+            <div class = "upSide">
+                <a class = "info" href = "#">Store Location</a>
+                <a class = "info" href = "#">Support</a>
+            </div>
+            <div class = "downSide">
+                <p>Email Address: cs@koalaliving.com</p>
+                <p>Contact Number: 1800 098 202</p>
+            </div>
+        </div>
+
+        <div class = "rightSide">
+            <div class = "upSide">
+                <p>Follow Us @Koala_living</p>
+            </div>
+            <div class = "downSide">
+                <p>Copyright 2019 Koala Living</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--Mobile Footer-->
+    <div class = "mobile mobileFooter">
+        <div class = "turnPage">
+            <div class = "middlePart">
+                <img src = "./images/leftArraw.png">
+                <div>
+                    <span>Page</span>
+                    <input class = "pageNumber" type = "number" value="1">
+                </div>
+                <img src = "./images/rightArraw.png">
+            </div>
+        </div>
+        <div class = "underLine">
+            <div class = "footerUpper">
+                <div>
+                    <img src = "./images/emailIcon.png"></img>
+                    <span>cs@koalaliving.com</span>
+                </div>
+                <div>
+                    <img src = "./images/phoneIcon.png"></img>
+                    <span>1800 098 202</span>
+                </div>
+            </div>
+            <p class = "copyRight">Copyright 2019 Koala Living</p>
+        </div>
+    </div>
+
+    <script src="./js/sidemenu.js"></script>
+    <script src="./js/mobileAddToFavorite.js"></script>
+    <script src="./js/mobileAddToCart.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/smallCategory.js"></script>
+    <script src="./js/confirm.js"></script>
+    <script src="./js/loginFunction.js"></script>
+
+</body>
+</html>
