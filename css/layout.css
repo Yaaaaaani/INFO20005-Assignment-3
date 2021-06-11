@@ -206,7 +206,7 @@ main{
 }
 
 .dinnerTopic{
-    background-image: url("../images/dinnerTopic.png");
+    background-image: url("./images/dinnerTopic.png");
     background-repeat: no-repeat;
     width: 435px;
     height: 341px;
@@ -218,7 +218,7 @@ main{
 }
 
 .livingTopic{
-    background-image: url("../images/livingTopic.png");
+    background-image: url("./images/livingTopic.png");
     background-repeat: no-repeat;
     width: 550px;
     height: 358px;
@@ -230,7 +230,7 @@ main{
 }
 
 .bedroomTopic{
-    background-image: url("../images/bedroomTopic.png");
+    background-image: url("./images/bedroomTopic.png");
     background-repeat: no-repeat;
     width: 550px; 
     height: 418px;
@@ -242,7 +242,7 @@ main{
 }
 
 .outdoorTopic{
-    background-image: url("../images/outdoorTopic.png");
+    background-image: url("./images/outdoorTopic.png");
     background-repeat: no-repeat;
     width: 330px;
     height: 390px;
@@ -254,7 +254,7 @@ main{
 }
 
 .homewaresTopic{
-    background-image: url("../images/homewaresTopic.png");
+    background-image: url("./images/homewaresTopic.png");
     background-repeat: no-repeat;
     width: 330px;
     height: 386px;
