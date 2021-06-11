@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living room</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/categoryPage.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+</head>
+<body>
+    
+    <!--Header part-->
+    <header>
+        <!--Functions over the white line-->
+        <div class = "Container upLine" id = "upLine">
+            <img class = "logo" src = "../images/logo.png" alt = "logo"></img>
+            <div class = "Container page">
+                <div class = "btn-header"><a href = "index.html">Home</a></div>
+                <div class = "btn-header" id = "clickBtn"><span id = "textInBtn">Living</span></div>
+                <div class = "btn-header"><span>Dining</span></div>
+                <div class = "btn-header"><span>Bedroom</span></div>
+                <div class = "btn-header"><span>Outdoor</span></div>
+                <div class = "btn-header"><span>Homewares</span></div>
+            </div>
+            <div class = "Container icon">
+                <div class = "btn-header" id = "searchIcon" ><img src = "../images/searchIcon.png"></img></div>
+                <div class = "btn-header" id = "userIcon" ><img src = "../images/userIcon.png"></img></div>
+                <div class = "btn-header" id = "wishListIcon" onclick = "window.location.href = 'Wishlist.html'">
+                    <img src = "../images/wishlistIcon.png"></img></div>
+                <div class = "btn-header" id = "cartIcon" onclick = "window.location.href = 'Cart.html'">
+                    <img src = "../images/cartIcon.png"></img></div>
+            </div>
+        </div>
+        <!--Search Function-->
+        <div class = "searchBar" id = "searchBar">
+            <div class = "Container innerBar">
+                <img id = "closeSearch" src = "../images/closeSearch.png"></img>
+                <div><p>Velvet Sofa</p></div>
+                <a href = "#"><img src = "../images/greenSearch.png"></img></a>
+            </div>
+        </div>
+        <!--Functions under the white line-->
+        <div class = "Container downLine">
+
+            <div class = "naviBar">
+                <a href = "index.html">Home</a>
+                <img src = "./images/naviLine.png"></img>
+                <a>Living Room</a>
+            </div>
+
+            <div class = "Container setting">
+                <div class = "btn-setting" onclick = ""><span>Version - Web</span></div>
+                <div class = "btn-setting" onclick = ""><span>Language - English</span></div>
+                <div class = "btn-setting" onclick = ""><span>Currency - AU$</span></div>
+            </div>
+        </div>
+        <!--Small Category of living room furnitures in Header-->
+        <div class = "livingCate" id = "categoryName">
+            <div class = "Container living">
+                <div class = "flexColumn">
+                    <div class = "btn"><a href = "FabricSofas.html">Fabric Sofas</a></div>
+                    <div class = "btn"><span>Coffee Tables</span></div>
+                    <div class = "btn"><span>Ottomans</span></div>
+                </div>
+                <div class = "flexColumn">
+                    <div class = "btn"><span>Leather Sofas</span></div>
+                    <div class = "btn"><span>Side Tables</span></div>
+                    <div class = "btn"><span>Office</span></div>
+                </div>
+                <div class = "flexColumn">
+                    <div class = "btn"><span>Occasional Sofas</span></div>
+                    <div class = "btn"><span>Entertainment Tables</span></div>
+                    <div class = "btn"><span>Fabric & Leather Warranty</span></div>
+                </div>
+            </div>
+        </div>
+        <!--Login Function-->
+        <div class = "loginSection flexColumn" id = "loginSection">
+            <div class = "upLogin">
+                <h6>Hi,</h6>
+                <h6>Miss Shirley Friday!</h6>
+                <div class = "btn-login" onclick = "window.location.href = 'MyAccount.html'">
+                    <h6 style="margin-left: 20px;" class = "itemInfo title">My Account</h6>
+                    <img style="margin-left: 20px;" src = "./images/arrow.png"></img></div>
+                <div class = "btn-login" onclick = "window.location.href = 'Order.html'">
+                    <h6 style="margin-left: 20px;" class = "itemInfo title">View My Order</h6>
+                    <img style="margin-left: 20px;" src = "./images/arrow.png"></img></div>          
+            </div>
+            <button class = "btn-confirm green" id = "closeLogin">Continue Shopping</button>
+        </div>
+
+    </header>
+
+    <!--Sidemenu-->
+    <div class = "sidemenu" id = "sidemenu" style="display: none;">
+        <div id = "normalDisplay">
+            <div class = "headerPart" id = "sidemenuClose">
+                <img src = "./images/leftArraw.png" style="margin-right: 15px;">
+                <span>BACK</span>
+            </div>
+    
+            <div class = "midPart">
+                <span onclick = "window.location.href = 'MyAccount.html'">SHIRLEY</span>
+                <img src = "./images/userIconBlack.png" style = "width: 25px; height: 25px;">
+            </div>
+    
+            <div class = "midPart">
+                <span onclick = "window.location.href = 'Wishlist.html'">WISHLIST</span>
+                <img src = "./images/favoriteIconBlack.png" style = "width: 25px; height: 25px;">
+            </div>
+    
+            <div class = "entrancesPart">
+                <p onclick = "window.location.href = 'index.html'">Home</p>
+                <p id = "livingBtn">Living</p>
+                <p>Dining</p>
+                <p>Bedroom</p>
+                <p>Outdoor</p>
+                <p>Homewares</p>
+            </div>
+    
+            <div class = "footerPart">
+                <p>Support</p>
+                <p>Store Location</p>
+            </div>
+        </div>
+        
+        <div id = "livingDisplay" style = "display: none;">
+            <div class = "headerPart" id = "livingDisplayClose">
+                <img src = "./images/leftArraw.png" style="margin-right: 15px;">
+                <span>BACK</span>
+            </div>
+            <div class = "entrancesPart">
+                <p onclick = "window.location.href = 'FabricSofas.html'">Fabric Sofas</p>
+                <p>Leather Sofas</p>
+                <p style = "width:120px;">Occasional Chairs</p>
+                <p>Coffee Tables</p>
+                <p>Side Tables</p>
+                <p style = "width:120px;">Entertainment Units</p>
+                <p>Ottomans</p>
+                <p>Office</p>
+                <p style = "width:120px;">Fabric & Leather 
+                    Protection Warranties</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Mobile Header-->
+    <div class = "mobile mobileHeader">
+        <div class = "upperBar">
+            <img class = "btn-mobileIcon" src = "./images/hamburgerBar.png" id = "humbargerBar">
+            <img class = "logo" src = "./images/logo.png">
+            <img class = "btn-mobileIcon" src = "./images/cartIcon.png" 
+                onclick="window.location.href='Cart.html'">
+        </div>
+        <div class = "lowerBar">
+            <div class = "naviBar">
+                <a href = "index.html">Home</a>
+                <img style= "width: 15px; height: 2px;" src = "./images/naviLine.png"></img>
+                <a>Living Room</a>
+            </div>
+            <img class = "searchIcon" id = "mobileSearchIcon" src = "./images/searchIcon.png"></img>
+        </div>
+        <!--Mobile Search Function-->
+        <div class = "mobileSearchBar" id = "mobileSearchBar">
+            <input type = "text" class = "inputSearch"/>
+            <img id = "mobileCloseSearch" src = "./images/closeSearch.png" class = "searchIcon"
+                style = "position: absolute; z-index: 101; left: 10px">
+            
+            <img src = "./images/greenSearch.png" class = "searchIcon"
+                style = "position: absolute; z-index: 101; right: 10px;">
+        </div>
+    </div>
+
+    <!--Main part-->
+    <main class = "categoryPage">
+        <img src = "./images/Livingroom/topicPhoto.png" alt = "Welcome to Living Room Page"></img>
+        <h1>Living Room</h1>
+        <p>So, you’ve just moved into your new home and you are shopping for new furniture.
+             It can get overwhelming with various kinds of ideas running in your mind. Do not worry!
+              Our team has completed the groundwork for you…<span onlick = "" class = "fullInfo">Learn More</span>
+        </p>
+
+        <div class = "background">
+            <div class = "Container livingPage">
+                <div class = "flexColumn livingCol">
+                    <a class = "imgBox" href = "FabricSofas.html">
+                        <img src = "./images/Livingroom/fabricSofas.png"></img>
+                        <div>Fabric Sofas</div>
+                    </a>
+                    
+                    <div class = "imgBox">
+                        <img src = "./images/Livingroom/coffeeTable.png"></img>
+                        <div>Coffee Tables</div>
+                    </div>
+    
+                    <div class = "imgBox">
+                        <img src = "./images/Livingroom/Ottomans.png"></img>
+                        <div>Ottomans</div>
+                    </div>
+                </div>
+    
+                <div class = "flexColumn livingCol">
+                    <div class = "imgBox">
+                        <img src = "./images/Livingroom/leatherSofa.png"></img>
+                        <div>Leather Sofas</div>
+                    </div>
+                    
+                    <div class = "imgBox">
+                        <img src = "./images/Livingroom/sideTable.png"></img>
+                        <div>Side Tables</div>
+                    </div>
+    
+                    <div class = "imgBox">
+                        <img src = "./images/Livingroom/office.png"></img>
+                        <div>Office</div>
+                    </div>
+                </div>
+    
+                <div class = "flexColumn livingCol">
+                    <div class = "imgBox">
+                        <img src = "./images/Livingroom/occasionalSofas.png"></img>
+                        <div>Occasional Sofas</div>
+                    </div>
+                    
+                    <div class = "imgBox">
+                        <img src = "./images/Livingroom/entertainmentUnit.png"></img>
+                        <div>Entertainment Unit</div>
+                    </div>
+    
+                    <div class = "imgBox">
+                        <img src = "./images/Livingroom/warranty.png"></img>
+                        <div>Fabric & Leather Warranty</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <!--Mobile Main Part-->
+    <div class = "mobile mobileMain" style = "background-color: #FAFAFA">
+        <ul class = "furnitureChoices">
+            <li onclick = "window.location.href='FabricSofas.html'">Fabric Sofas <img src = "./images/rightArrawWhite.png" style = "height: 35px;"></li>
+            <li>Leather Sofas <img src = "./images/rightArrawWhite.png" style = "height: 35px;"></li>
+            <li>Occasional Chairs <img src = "./images/rightArrawWhite.png" style = "height: 35px;"></li>
+            <li>Coffee Tables <img src = "./images/rightArrawWhite.png" style = "height: 35px;"></li>
+            <li>Side Tables <img src = "./images/rightArrawWhite.png" style = "height: 35px;"></li>
+            <li>Entertainment Units <img src = "./images/rightArrawWhite.png" style = "height: 35px;"></li>
+            <li>Ottomans <img src = "./images/rightArrawWhite.png" style = "height: 35px;"></li>
+            <li>Office <img src = "./images/rightArrawWhite.png" style = "height: 35px;"></li>
+            <li>Fabric & Leather 
+                Protection Warranties
+                <img src = "./images/rightArrawWhite.png" style = "height: 35px;">
+            </li>
+        </ul>
+    </div>
+
+
+    <!--Footer part-->
+    <footer>
+        <div class = "leftSide">
+
+            <div class = "upSide">
+                <a class = "info" href = "#">Store Location</a>
+                <a class = "info" href = "#">Support</a>
+            </div>
+            <div class = "downSide">
+                <p>Email Address: cs@koalaliving.com</p>
+                <p>Contact Number: 1800 098 202</p>
+            </div>
+        </div>
+
+        <div class = "rightSide">
+            <div class = "upSide">
+                <p>Follow Us @Koala_living</p>
+            </div>
+            <div class = "downSide">
+                <p>Copyright 2019 Koala Living</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--Mobile Footer-->
+    <div class = "mobile mobileFooter">
+        <div class = "underLine">
+            <div class = "footerUpper">
+                <div>
+                    <img src = "./images/emailIcon.png"></img>
+                    <span>cs@koalaliving.com</span>
+                </div>
+                <div>
+                    <img src = "./images/phoneIcon.png"></img>
+                    <span>1800 098 202</span>
+                </div>
+            </div>
+            <p class = "copyRight">Copyright 2019 Koala Living</p>
+        </div>
+    </div>
+
+    <script src="./js/sidemenu.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/smallCategory.js"></script>
+    <script src="./js/loginFunction.js"></script>
+
+</body>
+</html>
