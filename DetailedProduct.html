@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paola 3-Seater Electric Recliner</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/categoryPage.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+</head>
+<body>
+    <!--Header part-->
+    <header>
+        <!--Functions over the white line-->
+        <div class = "Container upLine" id = "upLine">
+            <img class = "logo" src = "../images/logo.png" alt = "logo"></img>
+            <div class = "Container page">
+                <div class = "btn-header"><a href = "index.html">Home</a></div>
+                <div class = "btn-header" id = "clickBtn"><span id = "textInBtn">Living</span></div>
+                <div class = "btn-header"><span>Dining</span></div>
+                <div class = "btn-header"><span>Bedroom</span></div>
+                <div class = "btn-header"><span>Outdoor</span></div>
+                <div class = "btn-header"><span>Homewares</span></div>
+            </div>
+            <div class = "Container icon">
+                <div class = "btn-header" id = "searchIcon" ><img src = "../images/searchIcon.png"></img></div>
+                <div class = "btn-header" id = "userIcon" ><img src = "../images/userIcon.png"></img></div>
+                <div class = "btn-header" id = "wishListIcon" onclick = "window.location.href = 'Wishlist.html'">
+                    <img src = "../images/wishlistIcon.png"></img></div>
+                <div class = "btn-header" id = "cartIcon" onclick = "window.location.href = 'Cart.html'">
+                    <img src = "../images/cartIcon.png"></img></div>
+            </div>
+        </div>
+        <!--Search Function-->
+        <div class = "searchBar" id = "searchBar">
+            <div class = "Container innerBar">
+                <img id = "closeSearch" src = "../images/closeSearch.png"></img>
+                <div><p>Velvet Sofa</p></div>
+                <a href = "#"><img src = "../images/greenSearch.png"></img></a>
+            </div>
+        </div>
+        <!--Functions under the white line-->
+        <div class = "Container downLine">
+
+            <div class = "naviBar">
+                <a href = "index.html">Home</a>
+                <img src = "./images/naviLine.png"></img>
+                <a href = "Living.html">Living Room</a>
+                <img src = "./images/naviLine.png"></img>
+                <a href = "FabricSofas.html">Fabric Sofas</a>
+                <img src = "./images/naviLine.png"></img>
+                <a>Paola 3-Seater Electric Recliner</a>
+            </div>
+
+            <div class = "Container setting">
+                <div class = "btn-setting" onclick = ""><span>Version - Web</span></div>
+                <div class = "btn-setting" onclick = ""><span>Language - English</span></div>
+                <div class = "btn-setting" onclick = ""><span>Currency - AU$</span></div>
+            </div>
+        </div>
+        <!--Small Category of living room furnitures in Header-->
+        <div class = "livingCate" id = "categoryName">
+            <div class = "Container living">
+                <div class = "flexColumn">
+                    <div class = "btn"><a href = "FabricSofas.html">Fabric Sofas</a></div>
+                    <div class = "btn"><span>Coffee Tables</span></div>
+                    <div class = "btn"><span>Ottomans</span></div>
+                </div>
+                <div class = "flexColumn">
+                    <div class = "btn"><span>Leather Sofas</span></div>
+                    <div class = "btn"><span>Side Tables</span></div>
+                    <div class = "btn"><span>Office</span></div>
+                </div>
+                <div class = "flexColumn">
+                    <div class = "btn"><span>Occasional Sofas</span></div>
+                    <div class = "btn"><span>Entertainment Tables</span></div>
+                    <div class = "btn"><span>Fabric & Leather Warranty</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Confirm Frame-->
+        <div class = "confirm" id = "favoriteConfirm">
+            <h4>It has been <span>successfully added</span>! You can find it in Wishlist!</h4>
+            <div class = "btns-confirm">
+                <button id = "viewWishList" class = "btn-confirm brown">View Wishlist</button>
+                <button id = "closeFavorite" class = "btn-confirm green">Continue Shopping</button>
+            </div>
+        </div>
+
+        <div class = "confirm" id = "addCartConfirm">
+            <h4>It has been <span>successfully added</span>! There is <span>1 item</span> in your Cart!</h4>
+            <div class = "btns-confirm">
+                <button id = "viewCart" class = "btn-confirm brown">View Cart</button>
+                <button id = "closeCart" class = "btn-confirm green">Continue Shopping</button>
+            </div>
+        </div>
+
+        <!--Login Function-->
+        <div class = "loginSection flexColumn" id = "loginSection">
+            <div class = "upLogin">
+                <h6>Hi,</h6>
+                <h6>Miss Shirley Friday!</h6>
+                <div class = "btn-login" onclick = "window.location.href = 'MyAccount.html'">
+                    <h6 style="margin-left: 20px;" class = "itemInfo title">My Account</h6>
+                    <img style="margin-left: 20px;" src = "./images/arrow.png"></img></div>
+                <div class = "btn-login" onclick = "window.location.href = 'Order.html'">
+                    <h6 style="margin-left: 20px;" class = "itemInfo title">View My Order</h6>
+                    <img style="margin-left: 20px;" src = "./images/arrow.png"></img></div>          
+            </div>
+            <button class = "btn-confirm green" id = "closeLogin">Continue Shopping</button>
+        </div>
+    </header>
+
+    <!--Sidemenu-->
+    <div class = "sidemenu" id = "sidemenu" style="display: none;">
+        <div id = "normalDisplay">
+            <div class = "headerPart" id = "sidemenuClose">
+                <img src = "./images/leftArraw.png" style="margin-right: 15px;">
+                <span>BACK</span>
+            </div>
+    
+            <div class = "midPart">
+                <span onclick = "window.location.href = 'MyAccount.html'">SHIRLEY</span>
+                <img src = "./images/userIconBlack.png" style = "width: 25px; height: 25px;">
+            </div>
+    
+            <div class = "midPart">
+                <span onclick = "window.location.href = 'Wishlist.html'">WISHLIST</span>
+                <img src = "./images/favoriteIconBlack.png" style = "width: 25px; height: 25px;">
+            </div>
+    
+            <div class = "entrancesPart">
+                <p onclick = "window.location.href = 'index.html'">Home</p>
+                <p id = "livingBtn">Living</p>
+                <p>Dining</p>
+                <p>Bedroom</p>
+                <p>Outdoor</p>
+                <p>Homewares</p>
+            </div>
+    
+            <div class = "footerPart">
+                <p>Support</p>
+                <p>Store Location</p>
+            </div>
+        </div>
+        
+        <div id = "livingDisplay" style = "display: none;">
+            <div class = "headerPart" id = "livingDisplayClose">
+                <img src = "./images/leftArraw.png" style="margin-right: 15px;">
+                <span>BACK</span>
+            </div>
+            <div class = "entrancesPart">
+                <p onclick = "window.location.href = 'FabricSofas.html'">Fabric Sofas</p>
+                <p>Leather Sofas</p>
+                <p style = "width:120px;">Occasional Chairs</p>
+                <p>Coffee Tables</p>
+                <p>Side Tables</p>
+                <p style = "width:120px;">Entertainment Units</p>
+                <p>Ottomans</p>
+                <p>Office</p>
+                <p style = "width:120px;">Fabric & Leather 
+                    Protection Warranties</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Mobile Header-->
+    <div class = "mobile mobileHeader">
+        <div class = "upperBar">
+            <img class = "btn-mobileIcon" src = "./images/hamburgerBar.png" id = "humbargerBar">
+            <img class = "logo" src = "./images/logo.png">
+            <img class = "btn-mobileIcon" src = "./images/cartIcon.png" 
+                onclick="window.location.href='Cart.html'">
+        </div>
+        <div class = "lowerBar">
+            <div class = "naviBar mobileNavi">
+                <a href = "index.html">Home</a>
+                <img style= "width: 15px; height: 2px;" src = "./images/naviLine.png"></img>
+                <a href="Living.html">Living Room</a>
+                <img style= "width: 15px; height: 2px;" src = "./images/naviLine.png"></img>
+                <a href="FabricSofas.html">Fabric Sofas</a>
+                <img style= "width: 15px; height: 2px;" src = "./images/naviLine.png"></img>
+                <a>Paolo 3-Seater Electric Recliner</a>
+            </div>
+            <img class = "searchIcon" id = "mobileSearchIcon" src = "./images/searchIcon.png"></img>
+        </div>
+
+        <!--Mobile Search Function-->
+        <div class = "mobileSearchBar" id = "mobileSearchBar">
+            <input type = "text" class = "inputSearch"/>
+            <img id = "mobileCloseSearch" src = "./images/closeSearch.png" class = "searchIcon"
+                style = "position: absolute; z-index: 101; left: 10px">
+            
+            <img src = "./images/greenSearch.png" class = "searchIcon"
+                style = "position: absolute; z-index: 101; right: 10px;">
+        </div>
+
+        <!--Mobile Add Product Confirmation-->
+        <div class = "addProduct" id = "addProduct">
+            <div class = "firstConfirm" id = "firstConfirm">
+                <div class = "group">
+                    <p>Color:</p>
+                    <img class = "color" src = "./images/color.png"></img>
+                </div>
+                <div class = "group">
+                    <p>Quantity:</p>
+                    <img style = "width: 20px; height: 5px;" class = "minus" src = "./images/minus.png"></img>
+                    <p class = "qty">1</p>
+                    <img style = "width: 20px; height: 20px;" class = "plus" src = "./images/plus.png"></img>
+                </div>
+                <div class = "btnGroups">
+                    <button class = "mobileButton green" id = "mobileCancel">Cancel</button>
+                    <button class = "mobileButton brown"id = "confirmBtn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class = "secondConfirm" id = "secondConfirm">
+                <h4 style="font-weight: 400;">It has been <span>successfully added</span>! There is <span>1 item</span> in your Cart!</h4>
+                <div class = "btns-confirm" style="flex-direction: column; width: max-content;">
+                    <button onclick = "window.location.href = 'Cart.html'" class = "btn-confirm brown" 
+                        style="margin: 0px auto; width: 300px; margin-bottom: 10px;">
+                        View Cart
+                    </button>
+                    <button id = "mobileCloseReminder" class = "btn-confirm green" 
+                        style="margin: 0px auto; width: 300px">
+                        Continue Shopping
+                    </button>
+                </div>
+            </div>
+
+            <div class = "wishlistConfirm" id = "wishlistConfirm" style = "display: none;">
+                <h4 style="font-weight: 400;">It has been <span>successfully added</span>! You can find it in Wishlist!</h4>
+                <div class = "btns-confirm" style="flex-direction: column; width: max-content;">
+                    <button onclick = "window.location.href = 'Wishlist.html'" class = "btn-confirm brown" 
+                        style="margin: 0px auto; width: 300px; margin-bottom: 10px;">
+                        View Wishlist
+                    </button>
+                    <button id = "mobileCloseFavorite" class = "btn-confirm green" 
+                        style="margin: 0px auto; width: 300px">
+                        Continue Shopping
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Main Part-->
+    <main>
+        <div class = "pageTop" id = "pageTop"></div>
+        <a class = "green btn-circle" href = "#pageTop"><img class = "alignTop" src = "./images/align-top.png"></a>
+        <div class = "Container upDetails special_justify">
+            <div class = "flexColumn detailedPhoto">
+                <img id = "photoDisplay" src = "./images/photo1.png" width="550px" height="350px"></img>
+                <div id = "description"></div>
+                <div class = "imgGroup">
+                    <img id = "img01" src = "./images/photo1.png"></img>
+                    <img id = "img02" src = "./images/photo2.png"></img>
+                    <img id = "img03" src = "./images/photo3.png"></img>
+                    <img id = "img04" src = "./images/photo4.png"></img>
+                    <img id = "img05" src = "./images/photo5.png"></img>
+                </div>
+            </div>
+            <div class = "flexColumn productIntro" style="margin-left: 100px;">
+                <h2>Paolo 3-Seater Electric Recliner</h2>
+                <div style = "margin: 20px 0px;">
+                    <h6 class = "itemInfo" style="font-style: italic; font-weight: 400;"> Annual Sales: 10000+</h6>
+                    <h6 class = "itemInfo">Product available for dispatch 2 weeks from 7th June 2021.</h6>
+                </div>
+                <div style = "margin: 20px 0px;">
+                    <div class = "group">
+                        <p style="margin-right: 10px;">Color:</p>
+                        <img class = "color" src = "./images/color.png"></img>
+                    </div>
+                    <div class = "group">
+                        <p style="margin-right: 10px;">Quantity:</p>
+                        <img class = "minus" src = "./images/minus.png"></img>
+                        <p class = "qty">1</p>
+                        <img class = "plus" src = "./images/plus.png"></img>
+                    </div>
+                </div>
+                <h2 class = "priceDisplay">$1999.00</h2>
+                <div class = "group">
+                    <button id = "addCartIcon" class = "btn-confirm brown btn-productIntro">Add to Cart</button>
+                    <button id = "favorite" class = "btn-confirm lightBrown btn-productIntro">Add to Wishlist</button>
+                </div>
+            </div>
+        </div>
+        <div class = "downDetails">
+            <div class = "Container acceleratorGroup">
+                <div class="btn-accelerator"><a href="#description">View Description</a></div>
+                <div class="btn-accelerator"><a href="#productDetails">View Details</a></div>
+                <div class="btn-accelerator"><a href="#warranty">View Warranty</a></div>
+            </div>
+
+            <div class = "description flexColumn">
+                <div class = "Container">
+                    <img src = "./images/photo1.png" width="350px" height="250px"></img>
+                    <div class = "paragraph">
+                        <h5>Contemporary Luxury</h5>
+                        <p>In Koala Living, we care about design as much as comfort. The Paolo 3 Seater is 
+                            powered by an electric recliner with adjustable headrests for both seats in order to 
+                            maximise the body support. Featuring inclined open lines inside the armrests, this 
+                            sofa provides optimum comfort without compromising on style. Gone are the days 
+                            of big bulky recliners.</p>
+                    </div>
+                </div>
+                <div class = "Container">
+                    <div class = "paragraph">
+                        <h5>Visually appealing and structurally sound</h5>
+                        <p>This contemporary design does not compromise on character with its soft fabric and 
+                            black powder coated steel legs. The buttons have been positioned on the outer side of 
+                            the armrests in a sleek understated design, along with USB charging port. Koala Living 
+                            fabric is extensively chosen for maximum quality and longevity. Built with high grade 
+                            solid wood that has been kiln dried to prevent warping and shrinking that has been 
+                            enforced further with steel for the recliner mechanism.</p>
+                    </div>
+                    <img src = "./images/photo6.png" width="350px" height="250px"></img>
+                </div>
+                <div class = "Container">
+                    <img src = "./images/photo5.png" width="350px" height="250px"></img>
+                    <div class = "paragraph">
+                        <h5>Beautiful simplicity</h5>
+                        <div id = "productDetails"></div>
+                        <p>Sumptuous and graceful, the Paolo recliner provides the style you seek while staying
+                            true to its pleasant contemporary design. This cream coloured beauty can be easily 
+                            styled with any lounge chair or perfect with its 2 Seater design. Enjoy this beautiful
+                            piece for years to come.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "Container productDetails special_justify">
+                <div class = "leftDetails">
+                    <p>Style: Contemporary</p>
+                    <p>Inner Filling: High density foam and polyester wadding</p>
+                    <p>Suspension: S-spring and webbing</p>
+                    <p>Main Material: Fabric</p>
+                    <div id = "warranty"></div>
+                    <p>Frame Material: Solid larch</p>
+                    <p>Leg Material: Iron powder coating</p>
+                    <p>Assembly: Legs to be fitted</p>
+                </div>
+                <div class = "middleLine"></div>
+                <div class = "rightDetails">
+                    <p>Product Dimensions: L218 x W105 x H78-98 cm</p>
+                    <p>Package Weight:  Package 1 - 70kg  Package 2 - 70kg</p>
+                    <p>Package dimensions (cm): Package 1 - 112 x 108 x 76 cm</p>
+                    <p style="margin-left: 46%;">Package 2 - 112 x 108 x 76 cm</p>
+                    <p>Seating Dimensions (cm): TBA</p>
+                    <p>Arm Dimensions (cm): TBA</p>
+                    <p>Product Weight: 140 kg</p>
+                    <p>Leg Dimensions (cm): TBA</p>
+                </div>
+            </div>
+
+            <p class = "warranty">This sofa comes with a 10-year limited warranty of Koala Living</p>
+
+        </div>
+    </main>
+
+    <!--Mobile Main Part-->
+    <div class = "mobile mobileMain detailedPageMobile"
+        style = "background-color: white; color: black;margin-bottom: 200px; margin-top: 0px;">
+        <div id = "detailedProductTop" style="position: absolute; top: 0;"></div>
+        <div class = "productInfoMobile" style="margin-top: 150px;">
+            <div class = "flexColumn detailedPhoto">
+                <img id = "photoDisplayMobile" src = "./images/photo1.png" width="345px" height="200px"></img>
+                <div class = "imgGroupMobile">
+                    <img class = "mobileProductImg" id = "img01Mobile" src = "./images/photo1.png"></img>
+                    <img class = "mobileProductImg" id = "img02Mobile" src = "./images/photo2.png"></img>
+                    <img class = "mobileProductImg" id = "img03Mobile" src = "./images/photo3.png"></img>
+                    <img class = "mobileProductImg" id = "img04Mobile" src = "./images/photo4.png"></img>
+                    <img class = "mobileProductImg" id = "img05Mobile" src = "./images/photo5.png"></img>
+                </div>
+            </div>
+            <div class = "shortTextIntro">
+                <h2>Paolo 3-Seater Electric Recliner</h2>
+                <p style="font-style: italic;">Annual Sales: 10000+</p>
+                <p>Product available for dispatch 
+                    <span style="color: #781715">2 weeks</span> 
+                    from 7th June 2021.</p>
+
+            </div>
+        </div>
+        <div class = "detailedInfoMobile">
+            <div class = "productDescription">
+                <div class = "descriptClick" id = "descriptClick">
+                    <h3>Product Description</h3>
+                    <div><img src = "./images/arrowDown.png"></div>
+                </div>
+                <div class = "textDescription" id = "textDescription">
+                    <img src = "./images/photo1.png">
+                    <h3>Contemporary Luxury</h3>
+                    <p>In Koala Living, we care about design as much as 
+                        comfort. The Paolo 3 Seater is powered by an 
+                        electric recliner with adjustable headrests for both 
+                        seats in order to maximise the body support. 
+                        Featuring inclined open lines inside the armrests, 
+                        this sofa provides optimum comfort without 
+                        compromising on style. Gone are the days of big 
+                        bulky recliners.
+                    </p>
+                    <img src = "./images/photo6.png">
+                    <h3>Visually appealing and structurally sound</h3>
+                    <p>This contemporary design does not compromise on 
+                        character with its soft fabric and black powder coated 
+                        steel legs. The buttons have been positioned on the outer 
+                        side of the armrests in a sleek understated design, along 
+                        with USB charging port. Koala Living fabric is extensively 
+                        chosen for maximum quality and longevity. Built with high 
+                        grade solid wood that has been kiln dried to prevent warping 
+                        and shrinking that has been enforced further with steel for 
+                        the recliner mechanism.
+                    </p>
+                    <img src = "./images/photo5.png">
+                    <h3>Beautiful simplicity</h3>
+                    <p>Sumptuous and graceful, the Paolo recliner provides the style 
+                        you seek while staying true to its pleasant contemporary 
+                        design. This cream coloured beauty can be easily styled with 
+                        any lounge chair or perfect with its 2 Seater design. Enjoy 
+                        this beautiful piece for years to come.
+                    </p>
+                </div>
+            </div>
+            <div class = "productDescription">
+                <div class = "descriptClick" id = "detailsClick">
+                    <h3>Product Details</h3>
+                    <div><img src = "./images/arrowDown.png"></div>
+                </div>
+                <div style = "padding-top: 20px" class = "textDescription" id = "textDetails">
+                    <p>Style: Contemporary</p>
+                    <p>Inner Filling: High density foam and polyester wadding</p>
+                    <p>Suspension: S-spring and webbing</p>
+                    <p>Main Material: Fabric</p>
+                    <p>Frame Material: Solid larch</p>
+                    <p>Leg Material: Iron powder coating</p>
+                    <p>Assembly: Legs to be fitted</p>
+                    <p>Product Dimensions: L218 x W105 x H78-98 cm</p>
+                    <p>Package Weight:  Package 1 - 70kg; Package 2 - 70kg</p>
+                    <p>Package dimensions (cm): Package 1 - 112 x 108 x 76 cm; Package 2 - 112 x 108 x 76 cm</p>
+                    <p>Seating Dimensions (cm): TBA</p>
+                    <p>Arm Dimensions (cm): TBA</p>
+                    <p>Product Weight: 140 kg</p>
+                    <p>Leg Dimensions (cm): TBA</p>
+                </div>
+            </div>
+            <div class = "productDescription">
+                <div class = "descriptClick" id = "warrantyClick">
+                    <h3>Product Warranty</h3>
+                    <div><img src = "./images/arrowDown.png"></div>
+                </div>
+                <div style = "padding-top: 20px" class = "textDescription" id = "textWarranty">
+                    <p>This sofa comes with a 10-year limited warranty of Koala Living</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer part-->
+    <footer>
+        <div class = "leftSide">
+
+            <div class = "upSide">
+                <a class = "info" href = "#">Store Location</a>
+                <a class = "info" href = "#">Support</a>
+            </div>
+            <div class = "downSide">
+                <p>Email Address: cs@koalaliving.com</p>
+                <p>Contact Number: 1800 098 202</p>
+            </div>
+        </div>
+
+        <div class = "rightSide">
+            <div class = "upSide">
+                <p>Follow Us @Koala_living</p>
+            </div>
+            <div class = "downSide">
+                <p>Copyright 2019 Koala Living</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--Mobile Footer-->
+    <div class = "mobile mobileFooter fixedFooter">
+        <div class = "underLine">
+            <div class = "footerUpper">
+                <h4 style="font-size: 1.2rem; font-weight: 360; margin: 10px 0px">$1999.00</h4>
+                <img onclick = "window.location.href = '#detailedProductTop'" src = "./images/mobileMoveTop.png">
+                <img id = "mobileFavorite" style = "cursor: pointer" src = "./images/smallerFavourite.png">
+                <button class = "mobileButton brown"id = "mobileAddCart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/sidemenu.js"></script>
+    <script src="./js/mobileAddToFavorite.js"></script>
+    <script src="./js/mobileAddToCart.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/smallCategory.js"></script>
+    <script src="./js/confirm.js"></script>
+    <script src="./js/loginFunction.js"></script>
+    <script src="./js/clickPhoto.js"></script>
+    <script src="./js/descriptionDisplay.js"></script>
+</body>
+</html>
